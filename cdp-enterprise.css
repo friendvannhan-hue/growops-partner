@@ -1,0 +1,240 @@
+/* GrowOps / Customer data infrastructure.
+   Light reading surfaces; strong coordination cores; pink means action or a data signal.
+   This layer changes visual roles only. Existing content, geometry and state owners stay intact. */
+:root {
+  --site-ink: #10131a;
+  --site-muted: #48505e;
+  --site-field: #f3f4f6;
+  --site-field-strong: #fce3ec;
+  --site-line: #d7dbe2;
+  --site-dark: #111722;
+  --site-accent-ink: #962248;
+  --site-heading-weight: 700;
+  --cdp-canvas: #111722;
+  --cdp-surface: #222c3c;
+  --cdp-surface-high: #303d51;
+  --cdp-line: #53627a;
+  --cdp-wire: #718199;
+  --cdp-text: #ffffff;
+  --cdp-muted: #c3ccdb;
+  --cdp-signal: #ff88a7;
+  --cdp-core: #ffd4e0;
+  --cdp-activation: #382432;
+  --cdp-grid: #36445c;
+  --cdp-radius: 20px;
+  --crm-paper-wash: linear-gradient(120deg, #fff 35%, #f7f8fa);
+  --crm-rose-wash: linear-gradient(120deg, #fff1f6, #fce3ec);
+  --crm-ink-wash: var(--cdp-canvas);
+  --pearl-canvas: radial-gradient(ellipse at 8% 8%, #e9edff 0, transparent 52%), radial-gradient(ellipse at 95% 92%, #ffe5ee 0, transparent 52%), linear-gradient(135deg, #f9fbff, #fffbfd 55%, #f5f7ff);
+  --pearl-core: linear-gradient(135deg, #e2e9ff, #f1dff4 52%, #ffe5df);
+  --pearl-selected: linear-gradient(120deg, #e0e8ff, #f0dcf5 55%, #ffdce8);
+  --pearl-line: #c6cedd;
+  --pearl-signal: #9a3c6b;
+  --pearl-spectrum: linear-gradient(110deg, #2858b8, #78469e 52%, #ae2e60);
+}
+
+/* A stronger hierarchy, without turning paragraphs into headings. */
+body #problems h1 { font-weight: 750; }
+body #main-content h2, body #contact h2 { font-weight: var(--site-heading-weight); }
+body #main-content :is(.solution-window,.flow-goal,.feature-panel,.capability-node,.tool-family) h3,
+body #growth-operations :is(.method-cycle,.plugin-manifesto-title) h3,
+body #operating-trio .trio-step-heading h3,
+body #case-studies :is(.oa-growth-intro h3,.oa-brand-name,.website-showcase-heading h3,.website-detail h4),
+body #tools :is(.integration-heading h3,.integration-card h4) { font-weight: 700; }
+body .primary-nav a, body #problems .hero-positioning { font-weight: 600; }
+body #problems :is(.ownership-claim,.growth-question p:last-child) { font-weight: 650; }
+body #cost-pressure :is(.cost-platform-estimate > strong,.private-domain-feature h3),
+body #case-studies .oa-followers strong, body #comparison .flow-compare-value { font-weight: 700; }
+body .site-header { border-bottom-color: var(--site-line); }
+body .growth-primary, body .header-cta { font-weight: 650; }
+body #problems .growth-question { border: 1px solid var(--site-line); background: var(--site-field); }
+body #problems .growth-question p:last-child strong { text-decoration: underline; text-decoration-color: var(--site-action); text-underline-offset: .16em; }
+body #problems .growth-services .growth-service { border: 1px solid var(--site-line); font-weight: 550; }
+
+/* The two requested diagrams now use a bright pearl canvas. Dark modules elsewhere stay intact. */
+body #problems .growth-cycle, body #business-features .feature-pipeline {
+  --cdp-canvas: #fcfcff;
+  --cdp-surface: #ffffff;
+  --cdp-surface-high: #eff1fc;
+  --cdp-line: var(--pearl-line);
+  --cdp-wire: #8a93a9;
+  --cdp-text: #1d1d1f;
+  --cdp-muted: #515867;
+  --cdp-signal: var(--pearl-signal);
+  --cdp-core: var(--pearl-core);
+  --cdp-activation: #fff5fa;
+}
+/* Preserve source → OneID → relationship geometry and its existing motion controls. */
+body #problems .growth-cycle {
+  --monad-line: var(--cdp-wire);
+  --monad-accent: var(--cdp-signal);
+  padding: 28px 24px 20px; border: 1px solid var(--cdp-line); border-radius: var(--cdp-radius);
+  color: var(--cdp-text); background: var(--pearl-canvas);
+}
+body #problems .growth-cycle > figcaption { color: var(--cdp-text); font-weight: 550; }
+body #problems .monad-map::before { inset: 0 12%; border-radius: 0; background: none; animation: none; }
+body #problems .monad-wires path { stroke: var(--cdp-wire); stroke-width: 2; }
+body #problems .monad-wires .monad-signal { stroke: var(--cdp-signal); stroke-width: 3.5; opacity: 1; }
+body #problems :is(.monad-sources > span,.growth-loop-step) {
+  color: var(--cdp-text); background: var(--cdp-surface); border: 1px solid var(--cdp-line);
+}
+body #problems .monad-sources > span { font-weight: 500; }
+body #problems .growth-loop-step strong { color: var(--cdp-text); font-weight: 600; }
+body #problems .growth-loop-dot { background: var(--cdp-signal); }
+body #problems .growth-loop-step:not(:last-child)::after { color: var(--cdp-muted); }
+body #problems .growth-loop-wiring path { stroke: var(--cdp-signal); stroke-width: 2.5; }
+body #problems .monad-petal { border: 1px solid var(--cdp-line); background: var(--cdp-surface); }
+body #problems .monad-petal--right { background: var(--cdp-activation); border-color: var(--cdp-signal); }
+body #problems .monad-petal span { color: var(--cdp-text); font-weight: 550; }
+body #problems .monad-core-center { inset: 80px; border: 1px solid var(--cdp-signal); border-radius: 24px; background: var(--cdp-core); transform: none; }
+body #problems .monad-core-center > div { width: 144px; transform: none; }
+body #problems .monad-core-center :is(span,strong,small) { color: var(--site-ink); }
+body #problems .monad-core-center strong { font-weight: 750; }
+body #problems .monad-core-center small { font-weight: 600; }
+body #problems .growth-return-label { color: var(--cdp-muted); }
+body #problems .monad-motion-toggle { color: var(--cdp-muted); }
+body #problems .monad-motion-toggle:hover { color: var(--cdp-text); }
+body #problems .growth-cycle :focus-visible { outline-color: var(--cdp-signal); }
+
+/* Give every illustration the same vocabulary: a framed surface and a decisive core. */
+body #solution-ecosystem .solution-hub { color: var(--cdp-text); background: var(--cdp-canvas); border: 1px solid var(--cdp-line); }
+body #solution-ecosystem .solution-hub span { font-weight: 600; }
+body #solution-ecosystem .solution-window { border-color: var(--site-line); }
+body #solution-ecosystem .solution-window-sub { color: var(--site-muted); }
+body #solution-ecosystem .solution-connections path { stroke: var(--site-accent-ink); }
+body #solution-ecosystem .solution-oneid { color: var(--cdp-text); background: var(--cdp-canvas); border: 1px solid var(--cdp-line); }
+body #solution-ecosystem .solution-oneid strong { font-weight: 700; }
+body #solution-ecosystem .solution-oneid svg { stroke: var(--cdp-signal); }
+body #solution-ecosystem .solution-oneid span { color: var(--cdp-muted); }
+body #solution-ecosystem .solution-message--reply { color: var(--cdp-text); background: var(--cdp-canvas); }
+body #solution-ecosystem .solution-message--reply strong { color: var(--cdp-signal); font-weight: 600; }
+body #solution-ecosystem .solution-phone { border: 2px solid var(--site-ink); }
+body #experience :is(.brand-showcase,.experience-industries) { border: 1px solid var(--site-line); }
+body #experience .brand-logo-card { border-color: var(--site-line); }
+body #experience .proof-number { background: var(--cdp-canvas); }
+
+/* Strong frames carry the reading rhythm; pink stays reserved for meaning. */
+body #cost-pressure .cost-platform-estimate:last-child { background: var(--site-white); border-color: var(--site-line); }
+body #cost-pressure .cost-platform-estimate > span { font-weight: 650; }
+body #cost-pressure .cost-platform-estimate > strong { color: var(--site-accent-ink); }
+body #cost-pressure .cost-deep-dive { border: 1px solid var(--site-line); }
+body #cost-pressure .cost-deep-dive[open] { border-color: var(--site-accent-ink); }
+body #cost-pressure .private-domain-feature {
+  position: relative; isolation: isolate; border: 1px solid var(--pearl-line);
+  background: radial-gradient(ellipse at 3% 5%, #e3eaff 0, transparent 57%), radial-gradient(ellipse at 98% 96%, #f9dce8 0, transparent 55%), linear-gradient(125deg, #fafbff, #f9f2fc 55%, #fff8f3);
+}
+body #cost-pressure .private-domain-feature .private-kicker { color: var(--site-accent-ink); }
+body #cost-pressure .private-domain-feature h3 span::after { height: 3px; background: var(--pearl-spectrum); }
+body #cost-pressure .private-domain-feature .cost-private-relationship {
+  border: 1px solid var(--pearl-line); color: var(--site-ink); background: #ffffff;
+}
+body #cost-pressure .private-domain-feature .cost-private-relationship :is(p,li) { color: var(--site-ink); }
+body #cost-pressure .private-domain-feature .cost-private-relationship > p { font-weight: 600; }
+body #cost-pressure .private-domain-feature .cost-private-relationship li {
+  display: flex; align-items: center; justify-content: center; min-height: 72px; padding: 14px 12px;
+  border: 1px solid var(--pearl-line); border-radius: 12px; background: #f6f7fd; font-weight: 550; text-align: center;
+}
+body #cost-pressure .private-domain-feature .cost-private-relationship li:last-child { background: var(--pearl-core); }
+body #cost-pressure .private-domain-feature .cost-private-relationship li:not(:last-child)::after { color: var(--pearl-signal); }
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+  body #cost-pressure .private-domain-feature h3 span {
+    background: var(--pearl-spectrum); background-clip: text; -webkit-background-clip: text;
+    color: var(--site-accent-ink); -webkit-text-fill-color: transparent;
+  }
+}
+body #why-growops .flow-goal:not(.is-first,.is-last) { background: var(--site-white); border: 1px solid var(--site-line); }
+body #why-growops .is-first { background: var(--site-action); }
+body #why-growops .is-last { background: var(--cdp-canvas); }
+body #growth-operations .method-canvas { border-color: var(--site-line); }
+body #growth-operations .growth-resources li { border: 1px solid var(--site-line); background: var(--site-white); font-weight: 550; }
+body #growth-operations :is(.growth-partner,.plugin-manifesto) { background: var(--cdp-canvas); }
+body #growth-operations .growth-partner { border: 1px solid var(--cdp-line); }
+body #growth-operations .growth-partner strong { font-weight: 750; }
+body #growth-operations .method-step { font-weight: 700; }
+body #comparison .flow-comparison-board { border: 1px solid var(--site-line); }
+body #comparison .flow-comparison-table thead .flow-compare-after { background: var(--cdp-canvas); }
+body :is(.oa-stage-legend,.comparison-focus) button[aria-pressed='true'] { background: var(--cdp-canvas); font-weight: 600; }
+
+/* The Customer 360 stage is a visible system, with honest illustrative content. */
+body #business-features .feature-pipeline { background: var(--pearl-canvas); border-color: var(--cdp-line); }
+body #business-features .feature-core-field {
+  background: var(--pearl-core); border-color: var(--cdp-line);
+}
+body #business-features .feature-core-field::after { content: none; animation: none; }
+body #business-features .feature-stage { color: var(--cdp-text); font-weight: 650; }
+body #business-features .feature-wire { stroke: var(--cdp-wire); }
+body #business-features .feature-route { --route-signal: var(--cdp-signal); }
+body #business-features .feature-route.is-active .feature-wire { stroke: var(--cdp-signal); stroke-opacity: 1; }
+body #business-features .feature-signal > circle { fill: var(--pearl-signal); }
+body #business-features .feature-node { color: var(--cdp-text); background: var(--cdp-surface); border-color: var(--cdp-line); }
+body #business-features .feature-node strong { font-weight: 650; }
+body #business-features .feature-node small { color: var(--cdp-muted); }
+body #business-features .feature-node--core { color: var(--cdp-text); background: var(--cdp-canvas); border-color: var(--cdp-signal); }
+body #business-features .feature-node--activation { background: var(--cdp-activation); }
+body #business-features .feature-node:hover:not([aria-pressed='true']) { color: var(--cdp-text); background: var(--cdp-surface-high); border-color: var(--cdp-signal); }
+body #business-features .feature-node[aria-pressed='true'] { color: var(--site-ink); background: var(--pearl-selected); border-color: var(--cdp-signal); }
+body #business-features .feature-node[aria-pressed='true'] small { color: var(--site-ink); }
+body #business-features .feature-node:active { border-color: var(--cdp-signal); }
+body #business-features .feature-node:focus-visible { outline-color: var(--cdp-signal); }
+body #business-features .feature-panel { border-color: var(--site-line); background: var(--site-white); }
+body #business-features #feature-pipeline-caption.dynamic-action-caption { border: 1px solid var(--cdp-line); color: var(--site-ink); background: var(--cdp-surface); }
+body #business-features #feature-pipeline-caption .dynamic-action-label { color: var(--site-accent-ink); }
+body #business-features #feature-pipeline-caption .dynamic-action-copy > strong { color: var(--site-ink); }
+body #business-features #feature-pipeline-caption .dynamic-action-copy > strong > span { color: var(--site-accent-ink); }
+body #business-features #feature-pipeline-caption .dynamic-action-note { color: var(--cdp-muted); }
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+  body #business-features #feature-pipeline-caption .dynamic-action-copy > strong > span {
+    background: var(--pearl-spectrum); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+}
+
+body #operating-trio .flow-trio-step, body #operating-trio .flow-trio-step:first-child { border: 1px solid var(--site-line); }
+body #operating-trio .flow-trio-step:nth-child(2) { border-color: var(--site-accent-ink); background: var(--site-white); }
+body #operating-trio .trio-step-copy h4 { font-weight: 650; }
+body #operating-trio .flow-growth { background: var(--cdp-canvas); }
+body #tools .tool-family { background: var(--site-field); border-color: var(--site-line); }
+body #tools .tool-atlas-bridge { background: var(--cdp-canvas); }
+body #tools .tool-atlas-bridge strong { font-weight: 650; }
+body #tools .integration-picker button[aria-selected='true'] { color: var(--site-ink); background: var(--site-white); border-color: var(--site-accent-ink); font-weight: 650; }
+body #tools .integration-card { border-color: var(--site-line); background: var(--site-white); }
+body #tools .integration-route-node { border: 1px solid var(--site-line); background: var(--site-field); }
+body #tools .integration-route-node.is-data { color: var(--cdp-text); background: var(--cdp-canvas); border-color: var(--cdp-line); }
+
+body #capabilities .capability-core { color: var(--cdp-text); background: var(--cdp-canvas); border-color: var(--cdp-line); }
+body #capabilities .capability-core :is(p,span:first-child,small) { color: var(--cdp-text); }
+body #capabilities .capability-core p { font-weight: 650; }
+body #capabilities .capability-core small { color: var(--cdp-signal); }
+body #capabilities .capability-core small:last-child { color: var(--cdp-signal); }
+body #capabilities .capability-node { border: 1px solid var(--site-line); background: var(--site-white); }
+body #capabilities .capability-lines path { stroke: var(--site-accent-ink); stroke-width: 2.5; }
+body #case-studies .oa-growth-card { border-color: var(--site-line); }
+body #case-studies .miniapp-portfolio-card { border: 1px solid var(--site-line); }
+body #contact { border-top-color: var(--site-line); background: var(--site-field); }
+body #contact .contact-links a { font-weight: 600; }
+body #contact .contact-links a:hover { border-color: var(--site-accent-ink); }
+body .footer-wordmark { color: var(--site-ink); font-weight: 750; }
+
+/* Keep the approved mobile reflow: natural-height stage groups and compact trio. */
+@media (max-width:767px) {
+  body #problems .growth-cycle { padding: 24px 16px 16px; }
+  body #problems .monad-map { gap: 24px; }
+  body #problems .monad-map::before { inset: 0; }
+  body #problems .monad-core::before, body #problems .monad-core::after { color: var(--cdp-signal); }
+  body #problems .monad-petal span, body #problems .monad-core-center :is(span,small) { font-size: 16px; }
+  body #problems .monad-sources > span { padding-inline: 8px; }
+  body #business-features .feature-stage { color: var(--cdp-text); }
+  body #business-features .feature-stage-group:not(:last-child)::before { background: var(--cdp-wire); }
+  body #business-features .feature-stage-group:not(:last-child)::after { background: var(--cdp-signal); }
+  body #cost-pressure .private-domain-feature .cost-private-relationship { padding: 20px; }
+  body #cost-pressure .private-domain-feature .cost-private-relationship li { min-height: 56px; }
+  body #cost-pressure .private-domain-feature .cost-private-relationship li:not(:last-child)::after { left: 50%; transform: translateX(-50%); }
+  body #business-features #feature-pipeline-caption.dynamic-action-caption { padding: 20px; }
+  body #business-features #feature-pipeline-caption .dynamic-action-label { font-size: 18px; }
+  body #business-features #feature-pipeline-caption .dynamic-action-copy > strong { font-size: 20px; line-height: 1.4; }
+  body #business-features #feature-pipeline-caption .dynamic-action-note { font-size: var(--site-note); }
+  body #operating-trio .trio-step-heading h3 { font-weight: 700; }
+}
+@media (max-width:360px) {
+  body #problems .monad-core { transform: scale(.75); }
+  body #problems .monad-petal span, body #problems .monad-core-center :is(span,small) { font-size: 19px; }
+}

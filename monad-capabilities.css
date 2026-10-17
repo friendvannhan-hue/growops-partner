@@ -1,0 +1,65 @@
+/* Match the approved Monad hero and method sections; one readable coordination map. */
+#capabilities {
+  --cap-paper: #f8f3f1;
+  --cap-ink: #242424;
+  --cap-muted: #50504d;
+  --cap-line: #c9c4c1;
+  --cap-white: #ffffff;
+  --cap-mint: #e6efe8;
+  --cap-coral: #f4e2db;
+  --cap-sky: #dde5f4;
+  --cap-gold: #f0eadb;
+  --cap-lilac: #eae5f1;
+  --cap-accent: #9d3051;
+  --cap-serif: "Inter", Georgia, serif;
+  --cap-mono: "Inter", ui-monospace, monospace; /* taste-skill-ignore: owner-approved Monad technical typography. */
+  --cap-gap: 24px;
+  --cap-radius: 24px;
+  padding-block: 88px !important;
+  color: var(--cap-ink);
+  background: var(--cap-paper);
+  scroll-margin-top: 88px;
+}
+#capabilities .eyebrow { margin: 0 0 24px; color: var(--cap-muted); font: 400 14px/1.5 var(--cap-mono); text-transform: none; letter-spacing: 0; } /* taste-skill-ignore: retain the existing section identifier in the approved Monad label style. */
+#capabilities .eyebrow::before, #capabilities .eyebrow::after { display: none; }
+#capabilities .capability-heading { display: grid; grid-template-columns: 1.2fr 1fr; align-items: end; gap: 48px; max-width: none; margin-bottom: 40px; }
+#capabilities h2 { max-width: none; margin: 0; color: var(--cap-ink); font: 400 clamp(40px,4.4vw,64px)/1.08 var(--cap-serif); letter-spacing: -.04em; }
+#capabilities .capability-heading > p { max-width: 46ch; margin: 0; color: var(--cap-muted); font: 400 18px/1.6 "Inter", sans-serif; }
+#capabilities .capability-system { position: relative; display: grid; grid-template-columns: minmax(0,1fr) 240px minmax(0,1fr); grid-template-rows: repeat(3,minmax(148px,auto)); align-items: center; gap: var(--cap-gap) 64px; min-height: 540px; padding: 24px 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; } /* taste-skill-ignore: remove inherited glow/shadow. */
+#capabilities .capability-system::before, #capabilities .capability-system::after { content: none; }
+#capabilities .capability-core { position: relative; inset: auto; left: auto; right: auto; top: auto; bottom: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; grid-column: 2; grid-row: 1 / span 3; gap: 24px; width: 240px; height: auto; min-height: 300px; padding: 28px 20px; border: 0; border-radius: 32px; color: var(--cap-ink); background: var(--cap-sky); box-shadow: none; transform: none; } /* taste-skill-ignore: remove inherited gradient orb shadow. */
+#capabilities .capability-core > span:first-child, #capabilities .capability-core small { color: var(--cap-ink); font: 400 14px/1.5 var(--cap-mono); text-transform: none; letter-spacing: 0; }
+#capabilities .capability-core .growops-logo { display: block; flex: none; width: 100%; max-width: 200px; height: 74px; min-height: 0; margin: 0; padding: 0; border: 0; border-radius: 12px; background: var(--cap-white); box-shadow: none; overflow: hidden; } /* taste-skill-ignore: logo retains original bitmap and white ground. */
+#capabilities .capability-core img { position: static; inset: auto; display: block; width: 100%; max-width: 100%; height: 100%; object-fit: cover; transform: none; }
+#capabilities .capability-core p { margin: 0; color: var(--cap-ink); font: 400 24px/1.15 var(--cap-serif); letter-spacing: -.02em; }
+#capabilities .capability-node { position: relative; inset: auto; left: auto; right: auto; top: auto; bottom: auto; align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 12px; width: 100%; height: auto; min-width: 0; min-height: 148px; margin: 0; padding: 24px 28px; border: 0; border-radius: var(--cap-radius); color: var(--cap-ink); background: var(--node-paper); box-shadow: none; backdrop-filter: none; transform: none; } /* taste-skill-ignore: remove inherited shadow and blur. */
+#capabilities .capability-node h3 { max-width: none; margin: 0; color: var(--cap-ink); font: 400 28px/1.15 var(--cap-serif); letter-spacing: -.025em; }
+#capabilities .capability-node p { margin: 0; color: var(--cap-muted); font: 400 16px/1.55 "Inter", sans-serif; }
+#capabilities .node-1 { grid-column: 1; grid-row: 1; --node-paper: var(--cap-mint); }
+#capabilities .node-2 { grid-column: 1; grid-row: 2; --node-paper: var(--cap-coral); }
+#capabilities .node-3 { grid-column: 1; grid-row: 3; --node-paper: var(--cap-gold); }
+#capabilities .node-4 { grid-column: 3; grid-row: 1; --node-paper: var(--cap-coral); }
+#capabilities .node-5 { grid-column: 3; grid-row: 2; --node-paper: var(--cap-lilac); }
+#capabilities .node-6 { grid-column: 3; grid-row: 3; --node-paper: var(--cap-mint); }
+#capabilities .capability-lines { position: absolute; z-index: 0; inset: 0; display: block; width: 100%; height: 100%; pointer-events: none; }
+#capabilities .capability-lines path { fill: none; stroke: var(--cap-line); stroke-width: 2; stroke-dasharray: none; vector-effect: non-scaling-stroke; }
+@media (max-width: 1000px) {
+  #capabilities .capability-heading { gap: 32px; }
+  #capabilities .capability-system { grid-template-columns: minmax(0,1fr) 180px minmax(0,1fr); gap: 24px 24px; }
+  #capabilities .capability-core { width: 180px; padding-inline: 16px; }
+  #capabilities .capability-core p { font-size: 22px; }
+  #capabilities .capability-node { padding: 24px 20px; }
+  #capabilities .capability-node h3 { font-size: 24px; }
+}
+@media (max-width: 767px) {
+  #capabilities { padding-block: 60px !important; }
+  #capabilities .capability-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 30px; }
+  #capabilities h2 { font-size: clamp(36px,10vw,54px); }
+  #capabilities .capability-heading > p { font-size: 16px; }
+  #capabilities .capability-system { grid-template-columns: 1fr; grid-template-rows: auto; gap: 12px; min-height: 0; padding: 0; }
+  #capabilities .capability-core { grid-column: 1; grid-row: 1; width: 100%; min-height: 0; padding: 24px; gap: 16px; margin-bottom: 16px; border-radius: var(--cap-radius); }
+  #capabilities .capability-core p { font-size: 24px; }
+  #capabilities .capability-node { grid-column: auto; grid-row: auto; min-height: 128px; padding: 24px; }
+  #capabilities .capability-node h3 { font-size: 28px; }
+  #capabilities .capability-lines { display: none; }
+}

@@ -1,0 +1,123 @@
+/* Content polish requested on 16 October: preserve the established form and shared brand tokens. */
+body :is(#solution-ecosystem,#experience,#business-features,#tools,#case-studies) .content-heading-solo { display: block; }
+body #problems .growth-sub { max-width: 60ch; }
+body #problems .ownership-lead, body #problems .ownership-tail { display: block; }
+body #problems .ownership-lead { margin-bottom: 10px; }
+body #problems .ownership-claim { display: inline; color: var(--site-accent-ink); font-size: 30px; font-weight: 650; line-height: 1.35; letter-spacing: -.025em; text-decoration: underline; text-decoration-color: var(--site-action); text-decoration-thickness: .12em; text-underline-offset: .12em; text-decoration-skip-ink: none; }
+body #problems .ownership-tail { margin-top: 12px; font-size: var(--site-body); color: var(--site-muted); }
+body #problems .growth-question { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,2.6fr); align-items: start; gap: 32px; max-width: none; margin: 40px 0 0; padding: 32px; background: var(--site-field-strong); text-align: left; }
+body #problems .growth-question .growth-question-label { margin: 2px 0 0; color: var(--site-accent-ink); font: 600 var(--site-body)/1.5 var(--site-font); }
+body #problems .growth-question p:last-child { max-width: 44ch; margin: 0; color: var(--site-ink); font: 600 32px/1.3 var(--site-font); letter-spacing: -.035em; }
+body #problems .growth-question p:last-child strong { color: var(--site-accent-ink); font-weight: 650; }
+body #experience .experience-copy { margin-bottom: 40px; }
+body #experience .experience-copy h2 { max-width: 1000px; }
+body #experience .experience-copy h2 > span { display: block; }
+/* Private domain is the idea; the existing China CAC evidence stays separate below. */
+body #cost-pressure .private-domain-feature { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: center; gap: 36px 56px; padding: 44px; border-radius: var(--site-radius); }
+body #cost-pressure .private-domain-feature .cost-private-heading { display: block; }
+body #cost-pressure .private-kicker { margin: 0 0 24px; color: var(--site-ink); font-size: var(--site-note); font-weight: 600; }
+body #cost-pressure .private-domain-feature h3 { margin: 0; color: var(--site-ink); font: 650 56px/1.05 var(--site-font); letter-spacing: -.045em; }
+body #cost-pressure .private-domain-feature h3 span { display: inline-block; position: relative; }
+body #cost-pressure .private-domain-feature h3 span::after { content: ''; position: absolute; bottom: -.12em; left: 0; width: 100%; height: 4px; background: var(--site-ink); transform-origin: left; }
+body #cost-pressure .private-domain-feature .cost-private-statement { margin: 28px 0 0; color: var(--site-ink); font: 400 28px/1.25 var(--site-font); letter-spacing: -.03em; }
+body #cost-pressure .cost-private-statement strong { font-weight: 650; }
+body #cost-pressure .private-domain-feature .cost-private-content { display: block; margin: 0; }
+body #cost-pressure .private-domain-feature .cost-private-content > p { max-width: 42ch; margin: 0; font-size: var(--site-lead); line-height: 1.65; }
+body #cost-pressure .private-domain-feature .cost-private-content > p strong { display: block; margin: 12px 0; font-size: 26px; font-weight: 600; line-height: 1.35; letter-spacing: -.025em; }
+body #cost-pressure .private-domain-feature .cost-private-relationship { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); align-items: center; gap: 32px; margin: 0; padding: 28px 32px; border-radius: 16px; }
+body #cost-pressure .private-domain-feature .cost-private-relationship > p { margin: 0; font: 500 var(--site-lead)/1.4 var(--site-font); letter-spacing: -.02em; }
+body #cost-pressure .private-domain-feature .cost-private-relationship ol { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; margin: 0; padding: 0; }
+body #cost-pressure .private-domain-feature .cost-private-relationship li { padding: 0; font-size: var(--site-body); font-weight: 500; line-height: 1.5; }
+body #cost-pressure .private-domain-feature .cost-private-relationship li:not(:last-child)::after { content: '→'; top: 50%; left: auto; right: -24px; margin: 0; color: var(--site-action); transform: translateY(-50%); }
+/* A clear manifesto replaces the small philosophy footnote. */
+body #growth-operations .method-heading { grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); }
+body #growth-operations .plugin-manifesto { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.4fr); align-items: start; gap: 48px; margin-top: 24px; padding: 36px; color: var(--site-white); background: var(--site-ink); border-radius: var(--site-radius); }
+body #growth-operations .plugin-manifesto-title p { margin: 0 0 16px; color: var(--site-white); font-size: var(--site-note); }
+body #growth-operations .plugin-manifesto-title h3 { margin: 0; max-width: none; color: var(--site-white); font: 650 32px/1.15 var(--site-font); letter-spacing: -.035em; }
+body #growth-operations .plugin-manifesto-title h3 :is(span,strong) { display: block; }
+body #growth-operations .plugin-manifesto-title h3 strong { color: var(--site-action); font-weight: inherit; }
+body #growth-operations .plugin-manifesto-copy p { margin: 0; max-width: 58ch; color: var(--site-white); font-size: var(--site-body); line-height: 1.65; }
+body #growth-operations .plugin-manifesto-copy .plugin-manifesto-statement { margin-bottom: 16px; font-size: var(--site-lead); font-weight: 550; }
+body #growth-operations .plugin-manifesto .growth-primary { display: inline-flex; margin-top: 24px; }
+/* Dynamic action belongs with the diagram it describes. */
+body #business-features #feature-pipeline-caption { display: grid; gap: 6px; max-width: 70ch; margin-inline: auto; padding-inline: 24px; color: var(--site-muted); font-size: var(--site-note); line-height: 1.6; }
+body #business-features #feature-pipeline-caption strong { color: var(--site-ink); font-size: var(--site-body); font-weight: 500; }
+/* One concise OA introduction, with the existing figures and their limitations untouched. */
+body #case-studies > .section-shell > .content-heading-solo { margin-bottom: 24px; }
+body #case-studies .oa-growth-showcase { margin-top: 24px; padding-top: 0; }
+body #case-studies .oa-growth-intro { grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: end; gap: 32px; margin-bottom: 24px; }
+body #case-studies .oa-growth-intro h3 { margin: 0; font-size: 32px; line-height: 1.2; }
+body #case-studies .oa-intro-copy p:first-child { margin: 0; color: var(--site-muted); font: 400 var(--site-body)/1.6 var(--site-font); }
+body #case-studies :is(.oa-media-credits,.website-media-credits)[hidden] { display: none; }
+@media (prefers-reduced-motion:no-preference) {
+  body #problems .growth-sub.growth-in-view .ownership-claim { animation: ownership-ink 700ms 250ms ease-out both; }
+  body #cost-pressure .private-domain-feature h3.growth-in-view span::after { animation: content-mark 700ms 200ms ease-out both; }
+  @keyframes content-mark { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes ownership-ink { from { opacity: .15; } to { opacity: 1; } }
+}
+@media (max-width:1000px) {
+  body #growth-operations .method-heading { grid-template-columns: 1fr; gap: 24px; }
+  body #cost-pressure .private-domain-feature { gap: 32px; padding: 32px; }
+  body #cost-pressure .private-domain-feature h3 { font-size: 48px; }
+  body #cost-pressure .private-domain-feature .cost-private-content > p strong { font-size: 24px; }
+  body #cost-pressure .private-domain-feature .cost-private-relationship { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
+  body #growth-operations .plugin-manifesto { gap: 32px; padding: 32px; }
+  body #growth-operations .plugin-manifesto-title h3 { font-size: 28px; }
+}
+@media (max-width:767px) {
+  body #problems .ownership-claim { font-size: 26px; }
+  body #problems .growth-question { grid-template-columns: 1fr; gap: 16px; padding: 24px; }
+  body #problems .growth-question p:last-child { font-size: 24px; }
+  body #experience .experience-copy { margin-bottom: 28px; }
+  body #cost-pressure .private-domain-feature { grid-template-columns: 1fr; gap: 28px; padding: 24px; }
+  body #cost-pressure .private-kicker { margin-bottom: 20px; }
+  body #cost-pressure .private-domain-feature h3 { font-size: 40px; }
+  body #cost-pressure .private-domain-feature .cost-private-statement { margin-top: 24px; font-size: 26px; }
+  body #cost-pressure .private-domain-feature .cost-private-content > p { font-size: var(--site-body); }
+  body #cost-pressure .private-domain-feature .cost-private-content > p strong { font-size: 20px; }
+  body #cost-pressure .private-domain-feature .cost-private-relationship { padding: 24px; gap: 24px; }
+  body #cost-pressure .private-domain-feature .cost-private-relationship ol { grid-template-columns: 1fr; gap: 28px; }
+  body #cost-pressure .private-domain-feature .cost-private-relationship li:not(:last-child)::after { content: '↓'; top: auto; bottom: -24px; left: 0; right: auto; transform: none; }
+  body #growth-operations .plugin-manifesto { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
+  body #growth-operations .plugin-manifesto-title h3 { font-size: 28px; }
+  body #business-features #feature-pipeline-caption { margin-inline: 0; padding-inline: 20px; text-align: left; }
+  body #case-studies .oa-growth-intro { grid-template-columns: 1fr; gap: 12px; }
+  body #case-studies .oa-growth-intro h3 { font-size: 28px; }
+}
+/* A visible editorial caption: the illustration's meaning, never a live-data status. */
+body #business-features #feature-pipeline-caption.dynamic-action-caption {
+  position: relative; display: grid; grid-template-columns: minmax(160px,.7fr) minmax(0,2fr);
+  align-items: start; gap: 32px; max-width: none; margin: 24px 24px 0; padding: 32px;
+  border-radius: 16px; background: var(--site-ink); color: var(--site-white);
+  text-align: left; overflow: hidden; isolation: isolate;
+}
+body #business-features .dynamic-action-label {
+  display: block; padding-top: 3px; color: var(--site-action);
+  font: 600 22px/1.3 var(--site-font); letter-spacing: -.02em;
+}
+body #business-features #feature-pipeline-caption .dynamic-action-copy > strong {
+  display: block; max-width: 46ch; margin: 0; color: var(--site-white);
+  font: 500 26px/1.4 var(--site-font); letter-spacing: -.02em; text-wrap: pretty;
+}
+body #business-features .dynamic-action-copy > strong > span { color: var(--site-action); font-weight: 600; }
+body #business-features .dynamic-action-note {
+  display: block; max-width: 65ch; margin-top: 16px; color: #d2cdd0;
+  font: 400 var(--site-body)/1.6 var(--site-font); letter-spacing: 0;
+}
+body #business-features .dynamic-action-caption::before {
+  content: ''; position: absolute; inset: 0 0 auto; height: 3px; background: var(--site-action); pointer-events: none;
+}
+@media (prefers-reduced-motion:no-preference) {
+  body #business-features[data-pipeline-ready='true'] .dynamic-action-caption::before {
+    background: linear-gradient(90deg,transparent 20%,var(--site-action) 50%,transparent 80%);
+    animation: dynamic-caption-flow 4s linear infinite; animation-play-state: paused;
+  }
+  body #business-features[data-motion='running'] .dynamic-action-caption::before { animation-play-state: running; }
+  @keyframes dynamic-caption-flow { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+}
+@media (max-width:767px) {
+  body #business-features #feature-pipeline-caption.dynamic-action-caption { grid-template-columns: 1fr; gap: 16px; margin: 20px 16px 0; padding: 24px; }
+  body #business-features .dynamic-action-label { padding-top: 0; font-size: 20px; }
+  body #business-features #feature-pipeline-caption .dynamic-action-copy > strong { font-size: 22px; line-height: 1.45; letter-spacing: -.015em; }
+  body #business-features .dynamic-action-note { margin-top: 16px; font-size: var(--site-body); }
+}

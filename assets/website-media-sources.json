@@ -1,0 +1,47 @@
+[
+  {
+    "brand": "osen",
+    "source": "https://cdn.hstatic.net/themes/200001186767/1001497482/14/home_about_banner_1.jpg?v=536",
+    "asset": "website-osen.webp",
+    "width": 932,
+    "height": 1400
+  },
+  {
+    "brand": "maria",
+    "source": "https://cdn.hstatic.net/files/200001120065/file/banner_d2c_-_nice_d3d93e2addc8466b982d636b03a800a3_master.png",
+    "asset": "website-maria.webp",
+    "width": 1400,
+    "height": 537
+  },
+  {
+    "brand": "fide",
+    "source": "https://theme.hstatic.net/200000863757/1001217634/14/slider_3.jpg?v=290",
+    "asset": "website-fide.webp",
+    "width": 1400,
+    "height": 615
+  },
+  {
+    "brand": "onici",
+    "asset": "oa-onici.webp",
+    "source": "https://cdn.hstatic.net/products/200001046547/5b_01_fa1c154ecd1342f7bcad11bc499d656e_grande.jpg",
+    "width": 600,
+    "height": 600,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "ls2",
+    "asset": "oa-ls2.webp",
+    "source": "https://ls2.vn/cdn/shop/collections/mu-ls2-stream-ff8080-ii-trang-3_83f458dc-928c-4c85-b7ca-aba5e3cc48da.jpg?v=1753264681&width=900",
+    "width": 900,
+    "height": 900,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "tai-dat",
+    "asset": "oa-tai-dat.webp",
+    "source": "https://nontaidat.vn/cdn/shop/files/480285908_1992344864589447_6248563699892872706_n.jpg?v=1754896635",
+    "width": 1200,
+    "height": 800,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  }
+]

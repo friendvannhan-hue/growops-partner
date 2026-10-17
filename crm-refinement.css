@@ -1,0 +1,138 @@
+/* CRM reference pass: the approved page, with a warmer data canvas and clearer states.
+   Relate: signal hierarchy. Planhat: editorial restraint. Dock: quiet perimeter gradients. */
+:root {
+  --site-ink: #111015;
+  --site-muted: #58515a;
+  --site-field: #f6f3f5;
+  --site-field-strong: #fce3ec;
+  --site-line: #e8dfe5;
+  --site-accent-ink: #942347;
+  --crm-paper-wash: linear-gradient(125deg, #fff 20%, #fff6f8 64%, #fce9e7);
+  --crm-rose-wash: linear-gradient(125deg, #fff4f8, #fce3ec 55%, #fbe9e1);
+  --crm-action-wash: linear-gradient(115deg, #ff688e, #ff8f9c);
+  --crm-ink-wash: linear-gradient(125deg, #111015 45%, #32202b);
+  --crm-ownership-wash: linear-gradient(110deg, #942347 10%, #b52c58 52%, #7c2748 92%);
+  --crm-signal-wash: radial-gradient(ellipse at 35% 40%, #f5bdd166, transparent 68%), radial-gradient(ellipse at 65% 60%, #f7d8c966, transparent 65%);
+  --crm-inner-radius: 12px;
+}
+body .site-header { border-bottom: 1px solid var(--site-line); }
+body :is(.button--coral,.header-cta), body #main-content a.growth-primary,
+body .growth-mobile-actions .growth-primary { background: var(--crm-action-wash); }
+body :is(.button--coral,.header-cta):hover, body #main-content a.growth-primary:hover,
+body .growth-mobile-actions .growth-primary:hover { background: var(--site-hover); }
+/* Saturated colour has one job: ownership, action and the selected data route. */
+@supports (background-clip:text) or (-webkit-background-clip:text) {
+  body #problems h1 > span:last-child {
+    color: var(--site-accent-ink); background: var(--crm-ownership-wash);
+    background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+}
+body #problems .growth-question { background: var(--crm-rose-wash); }
+body #problems .monad-map { isolation: isolate; }
+body #problems .monad-map::before {
+  content: ''; position: absolute; z-index: -1; inset: 0 12%; pointer-events: none;
+  background: var(--crm-signal-wash); border-radius: 48px;
+}
+body #problems :is(.monad-sources > span,.growth-loop-step) {
+  border: 1px solid var(--site-line); background: var(--site-white);
+}
+body #problems .monad-core-center { border: 1px solid var(--site-line); background: var(--site-white); }
+body #problems .monad-petal--right { background: var(--crm-rose-wash); }
+body #solution-ecosystem :is(.solution-hub,.solution-oneid) { background: var(--crm-rose-wash); }
+body #solution-ecosystem .solution-oneid { border: 1px solid var(--site-action); }
+body #solution-ecosystem .solution-window { border: 1px solid var(--site-line); }
+body #solution-ecosystem .solution-window-sub { color: var(--site-accent-ink); }
+body #experience .proof-number { background: var(--crm-ink-wash); }
+body #experience .proof-number-value sup { color: var(--site-action); }
+body #experience .brand-logo-card { border: 1px solid var(--site-line); border-radius: 16px; }
+body #cost-pressure .cost-platform-estimate { border: 1px solid var(--site-line); }
+body #cost-pressure .cost-platform-estimate:last-child { background: var(--crm-rose-wash); }
+body #cost-pressure .private-domain-feature { background: var(--crm-action-wash); }
+body #cost-pressure .private-domain-feature .cost-private-relationship {
+  color: var(--site-white); background: var(--crm-ink-wash);
+}
+body #cost-pressure .private-domain-feature .cost-private-relationship :is(p,li) { color: var(--site-white); }
+body #why-growops .is-first { background: var(--crm-action-wash); }
+body #why-growops .is-last, body #growth-operations :is(.growth-partner,.plugin-manifesto),
+body #operating-trio .flow-growth, body #tools .tool-atlas-bridge { background: var(--crm-ink-wash); }
+body #growth-operations .method-canvas { border: 1px solid var(--site-line); }
+body #growth-operations .method-cycle > li { padding-top: 16px; border-top: 1px solid var(--site-line); }
+body #operating-trio .flow-trio-step { border: 1px solid var(--site-line); }
+body #operating-trio .flow-trio-step:nth-child(2) { background: var(--crm-rose-wash); }
+/* A selected filter reads the same way across portfolio and comparison. */
+body :is(.oa-stage-legend,.comparison-focus) button { border: 1px solid transparent; }
+body :is(.oa-stage-legend,.comparison-focus) button[aria-pressed='true'] {
+  color: var(--site-white); background: var(--crm-ink-wash); border-color: var(--site-ink);
+}
+body :is(.oa-stage-legend,.comparison-focus) button:hover:not([aria-pressed='true']) {
+  color: var(--site-accent-ink); background: var(--site-field-strong); border-color: var(--site-line);
+}
+/* Product-like selection clarity, without implying that this is a live CRM. */
+body #business-features .feature-pipeline { border: 1px solid var(--site-line); background: var(--crm-paper-wash); }
+body #business-features .feature-core-field { overflow: hidden; background: var(--crm-rose-wash); border: 1px solid var(--site-line); }
+body #business-features .feature-core-field::after {
+  content: ''; position: absolute; inset: -15%; pointer-events: none;
+  background: var(--crm-signal-wash);
+}
+body #business-features .feature-node { border: 1px solid var(--site-line); border-radius: 16px; }
+body #business-features .feature-node--core { border-color: var(--site-ink); background: var(--crm-ink-wash); color: var(--site-white); }
+body #business-features .feature-node[aria-pressed='true'] {
+  color: var(--site-ink); background: var(--crm-action-wash); border-color: var(--site-accent-ink);
+}
+body #business-features .feature-node:hover:not([aria-pressed='true']) {
+  color: var(--site-ink); background: var(--site-field-strong); border-color: var(--site-accent-ink);
+}
+body #business-features .feature-panel { border: 1px solid var(--site-line); background: var(--crm-paper-wash); }
+body #business-features #feature-pipeline-caption.dynamic-action-caption { background: var(--crm-ink-wash); }
+body #tools .tool-family { border: 1px solid var(--site-line); background: var(--crm-paper-wash); }
+body #tools .tool-family-list .tool-chip { border-radius: var(--crm-inner-radius); }
+body #tools .integration-picker button { border: 1px solid transparent; }
+body #tools .integration-picker button[aria-selected='true'] {
+  color: var(--site-accent-ink); background: var(--crm-rose-wash); border-color: var(--site-accent-ink);
+}
+body #tools .integration-card { border: 1px solid var(--site-line); }
+body #tools .tool-atlas-bridge a { color: var(--site-action); }
+body #tools .tool-atlas-bridge a:hover { color: var(--site-white); }
+body #capabilities .capability-core { background: var(--crm-rose-wash); border: 1px solid var(--site-line); }
+body #case-studies .oa-growth-card { border-color: var(--site-line); }
+body #case-studies .oa-brand-link { border-top: 1px solid var(--site-line); }
+body #contact { background: var(--crm-paper-wash); border-top: 1px solid var(--site-line); }
+body #contact .contact-links a { border: 1px solid var(--site-line); }
+/* Keep motion local to the active diagrams. Existing Pause controls own both layers. */
+@media (prefers-reduced-motion:no-preference) {
+  body #problems .monad-map::before,
+  body #business-features .feature-core-field::after {
+    animation: crm-signal-breathe 9s ease-in-out infinite alternate; animation-play-state: paused;
+  }
+  body #problems .monad-pipeline[data-orbit-active='true'][data-hero-paused='false'] .monad-map::before,
+  body #business-features[data-motion='running'] .feature-core-field::after { animation-play-state: running; }
+  @keyframes crm-signal-breathe {
+    from { opacity: .55; transform: translateX(-2%) scale(.96); }
+    to { opacity: 1; transform: translateX(2%) scale(1.04); }
+  }
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  body :is(.header-cta,.button--coral), body #main-content a.growth-primary,
+  body #tools .tool-family-list .tool-chip { transition: transform 180ms ease, background-color 180ms ease; }
+  body :is(.header-cta,.button--coral):hover, body #main-content a.growth-primary:hover { transform: translateY(-2px); }
+  body #tools .tool-family-list .tool-chip:hover { transform: translateY(-3px); }
+}
+@media (min-width:768px) and (max-width:1000px) {
+  /* A long source label needs width at tablet size, not smaller type. */
+  body #business-features .feature-node--source { width: 26%; }
+}
+@media (max-width:767px) {
+  /* Compress diagram whitespace, not text size or touch targets. */
+  body #problems .monad-map { gap: 24px; }
+  body #problems .monad-map::before { inset: 160px 0 360px; border-radius: 32px; }
+  body #problems :is(.growth-loop-diagram,.growth-loop,.growth-loop-wiring) { height: 360px; }
+  body #problems .growth-loop-step:not(:last-child)::after { bottom: -20px; }
+  body #solution-ecosystem .solution-window { padding: 20px; }
+  body #solution-ecosystem .solution-art { margin-top: 4px; margin-bottom: 16px; }
+  body #solution-ecosystem .solution-art--data { height: 186px; }
+  body #solution-ecosystem .solution-art--relationship { height: 188px; }
+  body #solution-ecosystem .solution-art--operations { height: 178px; }
+  body #business-features .feature-toolbar button { min-height: 48px; }
+  body #tools .integration-picker button { border-radius: 12px; }
+  body #case-studies .oa-stage-legend button { align-items: center; }
+}

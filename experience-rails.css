@@ -1,0 +1,55 @@
+/* Two continuous, opposing portfolio rails; static complete grids are the fallback. */
+#experience .experience-proof-row { display: grid; grid-template-columns: 260px minmax(0,1fr); align-items: center; gap: 24px; }
+#experience .experience-proof-row .proof-number { grid-column: auto; grid-row: auto; min-height: 250px; }
+#experience .proof-number span { font-size: 80px; }
+#experience .portfolio-marquee { min-width: 0; }
+#experience .portfolio-track { min-width: 0; }
+#experience .portfolio-copy { display: none; }
+#experience .brand-logo-grid { grid-template-columns: repeat(3,minmax(0,1fr)); grid-auto-rows: 148px; gap: 12px; }
+#experience .brand-logo-card:nth-child(n) { grid-column: auto; flex-direction: column; justify-content: center; gap: 12px; }
+#experience .brand-logo-card img { animation: none; max-width: 160px; }
+#experience .brand-logo-card:first-child img { width: 150px; max-width: 100%; height: 64px; object-fit: cover; }
+#experience .brand-logo-card:nth-child(2) img { width: 64px; object-fit: cover; object-position: left center; }
+#experience .brand-logo-card:hover { transform: none; }
+#experience .experience-industries { margin-top: 28px; padding: 28px; }
+#experience .experience-industries h3 { max-width: none; margin: 0 0 24px; color: var(--growth-dark); font: 400 18px/1.5 "Inter", sans-serif; letter-spacing: 0; }
+#experience .industry-grid { grid-template-columns: repeat(4,minmax(0,1fr)); margin: 0; padding: 0; gap: 24px; }
+#experience .industry-grid li { min-width: 0; }
+.experience-motion-toggle { display: block; min-height: 44px; margin: 20px auto 0; padding: 10px 18px; border: 0; border-radius: 100px; color: var(--growth-dark); background: var(--growth-paper); font: 400 16px/1.5 "Inter", sans-serif; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
+.experience-motion-toggle[hidden] { display: none; }
+.experience-motion-toggle:hover { background: var(--growth-dark); color: var(--growth-ink); }
+.experience-motion-toggle:active { transform: translateY(1px); }
+#experience[data-rails-moving='false'] .solution-orbit rect { animation-play-state: paused; }
+@media (prefers-reduced-motion: no-preference) {
+  #experience[data-rails-moving='true'] .portfolio-marquee { overflow: hidden; }
+  #experience[data-rails-moving='true'] .portfolio-track { display: flex; width: max-content; }
+  #experience[data-rails-moving='true'] .portfolio-copy { display: flex; }
+  #experience[data-rails-moving='true'] .portfolio-track > * { display: flex; flex: 0 0 auto; gap: 12px; width: max-content; padding: 0 12px 0 0; }
+  #experience[data-rails-moving='true'] .brand-logo-card { flex: 0 0 190px; width: 190px; height: 170px; }
+  #experience[data-rails-moving='true'] .industry-grid li { flex: 0 0 220px; width: 220px; padding: 12px 0; }
+  #experience[data-rails-moving='true'] [data-portfolio-rail='brands'] .portfolio-track { animation: portfolio-brands-right 48s linear infinite; animation-play-state: paused; }
+  #experience[data-rails-moving='true'] [data-portfolio-rail='industries'] .portfolio-track { animation: portfolio-industries-left 72s linear infinite; animation-play-state: paused; }
+  #experience[data-rails-moving='true'][data-document-visible='true'] [data-rail-visible='true'] .portfolio-track { animation-play-state: running; }
+  #experience[data-rails-moving='true'] .portfolio-marquee:focus-within .portfolio-track { animation-play-state: paused; }
+}
+@media (hover: hover) and (pointer: fine) {
+  #experience[data-rails-moving='true'] .portfolio-marquee:hover .portfolio-track { animation-play-state: paused; }
+}
+@keyframes portfolio-brands-right { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+@keyframes portfolio-industries-left { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 1000px) {
+  #experience .experience-proof-row { grid-template-columns: 220px minmax(0,1fr); gap: 20px; }
+  #experience .brand-logo-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  #experience .industry-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 767px) {
+  #experience .experience-proof-row { grid-template-columns: 1fr; gap: 24px; }
+  #experience .experience-proof-row .proof-number { min-height: 0; }
+  #experience .proof-number span { font-size: 72px; }
+  #experience .brand-logo-grid { grid-template-columns: repeat(2,minmax(0,1fr)); grid-auto-rows: 148px; }
+  #experience .brand-logo-card:nth-child(n) { grid-column: auto; }
+  #experience .brand-logo-card:last-child { grid-column: 1 / -1; }
+  #experience .experience-industries { padding: 24px 20px; }
+  #experience .experience-industries h3 { font-size: 16px; }
+  #experience .industry-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px 16px; }
+}

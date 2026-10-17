@@ -1,0 +1,82 @@
+[
+  {
+    "brand": "lotus",
+    "asset": "oa-lotus.webp",
+    "source": "https://lotusgroup.vn/Data/Sites/1/Banner/1.jpg",
+    "width": 1200,
+    "height": 659,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "van-hanh",
+    "asset": "oa-van-hanh.webp",
+    "source": "https://vanhanhmall.com/wp-content/uploads/2020/02/VHM_outside-pm2-599x400.jpg",
+    "width": 599,
+    "height": 400,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "hung-vuong",
+    "asset": "oa-hung-vuong.webp",
+    "source": "https://hungvuongplaza.com.vn/wp-content/uploads/2023/08/z4177963723520_814573208048ea8e2452617f90791946-1354x800.jpg",
+    "width": 1200,
+    "height": 709,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "ohar",
+    "asset": "oa-ohar.webp",
+    "source": "https://ohartea.vn/storage/san-pham-06-01-25/tra-sua-thao-moc-dau-den-1.png",
+    "width": 1000,
+    "height": 1000,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "determinant",
+    "asset": "oa-determinant.webp",
+    "source": "https://cdn.hstatic.net/themes/200001048473/1001404057/14/img_home_banner_desktop_1.jpg?v=171",
+    "width": 1200,
+    "height": 500,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "onici",
+    "asset": "oa-onici.webp",
+    "source": "https://cdn.hstatic.net/products/200001046547/5b_01_fa1c154ecd1342f7bcad11bc499d656e_grande.jpg",
+    "width": 600,
+    "height": 600,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "tai-dat",
+    "asset": "oa-tai-dat.webp",
+    "source": "https://nontaidat.vn/cdn/shop/files/480285908_1992344864589447_6248563699892872706_n.jpg?v=1754896635",
+    "width": 1200,
+    "height": 800,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "ls2",
+    "asset": "oa-ls2.webp",
+    "source": "https://ls2.vn/cdn/shop/collections/mu-ls2-stream-ff8080-ii-trang-3_83f458dc-928c-4c85-b7ca-aba5e3cc48da.jpg?v=1753264681&width=900",
+    "width": 900,
+    "height": 900,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "ohar-logo",
+    "asset": "oa-ohar-logo.webp",
+    "source": "https://ohartea.vn/storage/logo/untitled-design-2.png",
+    "width": 1200,
+    "height": 640,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  },
+  {
+    "brand": "determinant-logo",
+    "asset": "oa-determinant-logo.webp",
+    "source": "https://cdn.hstatic.net/themes/200001048473/1001404057/14/logo.png?v=171",
+    "width": 1200,
+    "height": 675,
+    "rights": "Brand-owned website media; used for identification under user instruction. No stock or Creative Commons license claimed."
+  }
+]

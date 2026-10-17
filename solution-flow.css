@@ -1,0 +1,183 @@
+/* Owner-requested continuation. Card grids, arrows, labels and step numbers follow the brief. */
+:root { --flow-soft: #e6eaf1; --flow-white: #ffffff; --flow-accent-ink: #8e2346; --flow-number: #65728a; }
+.partner-outcomes, .flow-comparison, .flow-ecosystem, .flow-features, .flow-trio { position: relative; padding: 95px 0; scroll-margin-top: 90px; font: 400 16px/1.55 "Inter", sans-serif; }
+.partner-outcomes, .flow-comparison, .flow-features { background: var(--growth-paper); color: var(--growth-dark); }
+.flow-ecosystem, .flow-trio { background: var(--growth-ground); color: var(--growth-ink); }
+.flow-label { margin: 0 0 24px; font-size: 16px; font-weight: 500; color: inherit; }
+.flow-section-heading { display: grid; grid-template-columns: 1.3fr 1fr; gap: 55px; align-items: end; }
+.flow-section-heading h2 { margin: 0; max-width: none; color: inherit; font: 600 clamp(34px, 4.6vw, 66px)/1.12 "Inter", sans-serif; letter-spacing: -.045em; }
+.flow-section-heading > p { max-width: 44ch; margin: 0; color: inherit; font-size: 18px; line-height: 1.55; }
+.flow-note { max-width: 60ch; margin: 28px 0 0; color: inherit; font-size: 16px; line-height: 1.6; }
+
+.flow-goals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 45px; }
+.flow-goal { position: relative; display: flex; flex-direction: column; align-items: start; min-height: 230px; padding: 28px; background: var(--flow-white); color: var(--growth-dark); }
+.flow-goal.is-first { background: var(--growth-accent); }
+.flow-goal.is-last { background: var(--growth-dark); color: var(--growth-ink); }
+.flow-goal-direction { align-self: end; display: block; width: 32px; height: 32px; margin-bottom: 28px; }
+.flow-goal-direction svg { display: block; width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.flow-goal h3 { max-width: none; margin: 0 0 12px; color: inherit; font: 600 24px/1.2 "Inter", sans-serif; letter-spacing: -.025em; }
+.flow-goal p { max-width: 30ch; margin: 0; color: inherit; font-size: 16px; }
+
+#growth-operations { background: var(--growth-ground); color: var(--growth-ink); }
+#growth-operations h2, #growth-operations .growth-resources, #growth-operations .growth-connector, #growth-operations .growth-result { color: var(--growth-ink); }
+#growth-operations h2 { font-size: clamp(32px, 4.6vw, 66px); }
+#growth-operations .growth-connector { font-size: 40px; }
+.flow-philosophy-sub { max-width: 60ch; margin: 30px 0 0; color: var(--growth-ink); font-size: 18px; line-height: 1.55; }
+#growth-operations .growth-partner { color: var(--growth-dark); background: var(--growth-paper); }
+#growth-operations .growth-plugin { background: var(--growth-field); }
+#growth-operations > .section-shell > .growth-primary:hover { color: var(--growth-dark); background: var(--growth-ink); }
+#growth-operations .growth-primary:focus-visible { outline-color: var(--growth-ink); }
+
+.flow-comparison { padding-block: 80px; }
+.flow-comparison-heading h2 { max-width: 1000px; margin: 0; color: inherit; font: 600 clamp(34px, 4.6vw, 66px)/1.08 "Inter", sans-serif; letter-spacing: -.045em; }
+.flow-comparison-heading > p { max-width: 60ch; margin: 22px 0 0; color: inherit; font-size: 18px; line-height: 1.55; }
+.flow-comparison-scenario { max-width: 60ch; margin: 26px 0 0; font-size: 16px; line-height: 1.5; }
+.flow-comparison-board { margin-top: 22px; scroll-margin-top: 110px; }
+.flow-comparison-table { width: 100%; margin: 0; border: 0; border-collapse: separate; border-spacing: 0; table-layout: fixed; color: var(--growth-dark); }
+.flow-compare-factor { width: 22%; }
+.flow-compare-from { width: 34%; }
+.flow-compare-to { width: 44%; }
+.flow-comparison-table th, .flow-comparison-table td { padding: 12px 24px; border: 0; text-align: left; font-size: 16px; font-weight: 400; line-height: 1.5; vertical-align: middle; overflow-wrap: break-word; }
+.flow-comparison-table td strong { font-weight: 600; }
+.flow-compare-before { background: var(--flow-soft); }
+.flow-compare-after { background: var(--growth-dark); color: var(--growth-ink); }
+.flow-comparison-table .flow-compare-axis { padding-left: 0; background: var(--growth-paper); color: var(--growth-dark); font-weight: 500; }
+.flow-comparison-table thead th { padding-block: 22px; vertical-align: bottom; }
+.flow-comparison-table thead th > span { display: block; margin-bottom: 8px; font-size: 16px; }
+.flow-comparison-table thead th > strong { display: block; font-size: 24px; font-weight: 600; line-height: 1.2; letter-spacing: -.025em; }
+.flow-comparison-table thead .flow-compare-after > span { color: var(--growth-accent); }
+.flow-comparison-table .flow-compare-priority > * { padding-top: 14px; padding-bottom: 14px; }
+.flow-compare-priority .flow-compare-axis > strong { display: block; margin-bottom: 6px; font-size: 18px; font-weight: 600; }
+.flow-compare-priority .flow-compare-axis > span { display: block; max-width: 18ch; font-size: 16px; font-weight: 400; }
+.flow-comparison-table .flow-compare-previous { display: block; font-size: 24px; font-weight: 500; line-height: 1.15; letter-spacing: -.025em; }
+.flow-comparison-table .flow-compare-value { display: flex; align-items: baseline; gap: 4px; color: var(--growth-accent); font-size: 48px; font-weight: 500; line-height: 1.05; letter-spacing: -.045em; font-variant-numeric: tabular-nums; }
+.flow-compare-value > span { font-size: 24px; }
+.flow-comparison-table .flow-compare-direction { font-size: 40px; }
+.flow-compare-detail { display: block; margin-top: 6px; font-size: 16px; font-weight: 400; line-height: 1.5; }
+.flow-comparison-table .flow-compare-asset > * { padding-top: 20px; padding-bottom: 20px; background: var(--growth-accent); color: var(--growth-dark); }
+.flow-comparison-table .flow-compare-asset > .flow-compare-axis { padding-left: 24px; }
+.flow-compare-asset .flow-compare-after > strong { display: block; font-size: 24px; line-height: 1.2; letter-spacing: -.025em; }
+.flow-comparison-footnote { max-width: 60ch; margin: 24px 0 0; font-size: 16px; line-height: 1.55; }
+@media (hover: hover) {
+  .flow-comparison-table tbody tr:not(.flow-compare-asset):hover .flow-compare-before { background: var(--flow-white); }
+  .flow-comparison-table tbody tr:not(.flow-compare-asset):hover .flow-compare-after { background: var(--growth-field); }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .flow-comparison-table th, .flow-comparison-table td { padding-inline: 18px; }
+  .flow-comparison-table .flow-compare-axis { padding-left: 0; }
+  .flow-comparison-table .flow-compare-asset > .flow-compare-axis { padding-left: 18px; }
+  .flow-comparison-table thead th > strong { font-size: 20px; }
+  .flow-comparison-table .flow-compare-value { font-size: 40px; }
+  .flow-comparison-table .flow-compare-direction { font-size: 32px; }
+}
+@media (max-width: 767px) {
+  .flow-comparison-heading h2 { font-size: clamp(29px, 8vw, 42px); line-height: 1.1; }
+  .flow-comparison-heading > p { margin-top: 18px; font-size: 18px; }
+  .flow-comparison-scenario { margin-top: 22px; }
+  .flow-comparison-board { margin-top: 20px; scroll-margin-top: 92px; }
+  .flow-comparison-table, .flow-comparison-table thead, .flow-comparison-table tbody { display: block; }
+  .flow-comparison-table colgroup { display: none; }
+  .flow-comparison-table tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .flow-comparison-table th, .flow-comparison-table td { display: block; width: auto; padding: 16px 14px; font-size: 16px; }
+  .flow-comparison-table thead th { padding: 16px 14px; }
+  .flow-comparison-table thead th > span { margin-bottom: 8px; font-size: 16px; }
+  .flow-comparison-table thead th > strong { font-size: 20px; }
+  .flow-comparison-table thead .flow-compare-axis { display: none; }
+  .flow-comparison-table tbody .flow-compare-axis { display: flex; grid-column: 1 / -1; align-items: baseline; flex-wrap: wrap; gap: 8px 12px; padding: 18px 0 8px; }
+  .flow-compare-priority .flow-compare-axis > strong { margin: 0; }
+  .flow-compare-priority .flow-compare-axis > span { max-width: none; }
+  .flow-comparison-table .flow-compare-value { font-size: 44px; }
+  .flow-comparison-table .flow-compare-direction { font-size: 32px; }
+  .flow-comparison-table .flow-compare-previous { font-size: 24px; }
+  .flow-comparison-table td { align-self: stretch; }
+  .flow-comparison-table .flow-compare-asset { margin-top: 18px; }
+  .flow-comparison-table .flow-compare-asset > .flow-compare-axis { padding: 18px 14px 0; }
+  .flow-comparison-table .flow-compare-asset > td { padding-top: 14px; padding-bottom: 18px; }
+  .flow-compare-asset .flow-compare-after > strong { font-size: 20px; }
+}
+
+
+.flow-solutions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; margin: 48px 0 0; padding: 0; list-style: none; }
+.flow-solution { position: relative; display: flex; flex-direction: column; gap: 28px; min-height: 285px; margin: 0; padding: 28px 24px; background: var(--growth-field); }
+.flow-solution:not(:last-child)::after { position: absolute; content: "→"; top: 50%; right: -24px; z-index: 1; color: var(--growth-ink); font-size: 26px; line-height: 1; transform: translateY(-50%); }
+.flow-solution h3 { margin: 0 0 12px; max-width: none; color: inherit; font: 600 24px/1.2 "Inter", sans-serif; letter-spacing: -.03em; }
+.flow-solution > div > span { display: block; color: var(--growth-note); font-size: 16px; }
+.flow-solution p { margin: auto 0 0; color: var(--growth-ink); font-size: 16px; }
+
+.flow-feature-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 38px; }
+.flow-feature { display: flex; flex-direction: column; align-items: start; padding: 24px; background: var(--flow-white); color: var(--growth-dark); }
+.flow-feature > svg { display: block; width: 32px; height: 32px; margin-bottom: 25px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.flow-feature h3 { max-width: none; margin: 0; color: inherit; font: 600 24px/1.2 "Inter", sans-serif; letter-spacing: -.025em; }
+.flow-feature > p { margin: 18px 0 28px; color: inherit; font-size: 16px; line-height: 1.55; }
+.flow-feature p.flow-feature-outcome { margin: auto 0 0; padding-top: 24px; }
+.flow-feature-outcome span { display: block; margin-bottom: 10px; color: var(--growth-dark); font-weight: 400; }
+.flow-feature-outcome strong { display: block; color: var(--flow-accent-ink); font-weight: 600; }
+
+.flow-trio-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin: 48px 0 0; padding: 0; list-style: none; }
+.flow-trio-step { position: relative; padding: 28px; margin: 0; background: var(--growth-field); }
+.flow-trio-number { position: absolute; right: 24px; top: 14px; color: var(--flow-number); font: 500 96px/1 "Inter", sans-serif; letter-spacing: -.06em; }
+.flow-trio-step > div { position: relative; padding-top: 96px; }
+.flow-trio-step > div > p { margin: 0; color: var(--growth-ink); font-size: 16px; }
+.flow-trio-step h3 { margin: 12px 0 18px; color: var(--growth-ink); font: 600 32px/1.15 "Inter", sans-serif; letter-spacing: -.03em; }
+.flow-trio-step:not(:last-child)::after { content: "→"; position: absolute; top: 55%; right: -24px; z-index: 1; color: var(--growth-ink); font-size: 26px; line-height: 1; }
+.flow-convergence { display: block; width: 100%; height: 90px; pointer-events: none; }
+.flow-convergence path { fill: none; stroke: var(--growth-note); stroke-width: 3; vector-effect: non-scaling-stroke; }
+.flow-growth { display: grid; gap: 20px; justify-items: center; padding: 40px 24px; background: var(--growth-accent); color: var(--growth-dark); }
+.flow-growth > span { font-size: 16px; }
+.flow-growth > strong { font: 600 clamp(56px, 10vw, 144px)/1 "Inter", sans-serif; letter-spacing: -.055em; }
+.flow-trio > .section-shell > .growth-primary { margin-top: 32px; }
+.partner-outcomes :focus-visible, .flow-comparison :focus-visible, .flow-ecosystem :focus-visible, .flow-features :focus-visible, .flow-trio :focus-visible { outline: 3px solid var(--growth-accent); outline-offset: 5px; }
+
+@media (max-width: 1100px) {
+  .flow-section-heading { gap: 30px; }
+  .flow-goal { padding: 24px; }
+  .flow-solutions { gap: 22px; }
+  .flow-solution { padding: 24px 18px; }
+  .flow-solution h3 { font-size: 22px; }
+  .flow-solution:not(:last-child)::after { right: -20px; }
+  .flow-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .flow-trio-step { padding: 24px; }
+}
+
+@media (max-width: 767px) {
+  .partner-outcomes, .flow-comparison, .flow-ecosystem, .flow-features, .flow-trio { padding-block: 60px; }
+  .flow-label { margin-bottom: 20px; }
+  .flow-section-heading { grid-template-columns: 1fr; gap: 24px; }
+  .flow-section-heading h2 { font-size: clamp(29px, 8vw, 42px); }
+  .flow-section-heading > p { max-width: none; font-size: 18px; }
+  .flow-goals { grid-template-columns: 1fr; gap: 12px; margin-top: 30px; }
+  .flow-goal { min-height: 210px; }
+  .flow-goal-direction { margin-bottom: 24px; }
+  .flow-goal h3 { font-size: 24px; }
+  .flow-philosophy-sub { font-size: 16px; margin-top: 25px; }
+  #growth-operations h2 { font-size: clamp(21px, 5.5vw, 38px); }
+  #growth-operations .growth-connector { font-size: 32px; }
+  .flow-solutions { grid-template-columns: 1fr; gap: 28px; margin-top: 32px; }
+  .flow-solution { min-height: 0; gap: 28px; padding: 28px 24px; }
+  .flow-solution h3 { font-size: 24px; }
+  .flow-solution:not(:last-child)::after { content: "↓"; top: auto; bottom: -25px; right: 50%; transform: translateX(50%); }
+  .flow-feature-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 30px; }
+  .flow-feature { padding: 28px 24px; }
+  .flow-feature h3 { font-size: 24px; }
+  .flow-feature > p { margin-bottom: 12px; }
+  .flow-trio-steps { grid-template-columns: 1fr; gap: 28px; margin-top: 32px; }
+  .flow-trio-step { padding: 28px; }
+  .flow-trio-step > div { padding-top: 86px; }
+  .flow-trio-step:not(:last-child)::after { content: "↓"; top: auto; bottom: -26px; right: 50%; transform: translateX(50%); }
+  .flow-convergence { display: none; }
+  .flow-growth { position: relative; padding: 32px 18px; margin-top: 42px; }
+  .flow-growth::before { content: "↓"; position: absolute; top: -32px; left: 50%; color: var(--growth-ink); font-size: 26px; line-height: 1; transform: translateX(-50%); }
+  .flow-growth > strong { font-size: clamp(50px, 17vw, 90px); }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .flow-goals { gap: 12px; }
+  .flow-goal { padding: 22px 18px; }
+  .flow-goal h3 { font-size: 22px; }
+  .flow-solution h3 { font-size: 20px; }
+  .flow-trio-steps { gap: 22px; }
+  .flow-trio-step { padding: 22px 18px; }
+  .flow-trio-number { right: 18px; font-size: 80px; }
+  .flow-trio-step h3 { font-size: 28px; }
+  .flow-trio-step:not(:last-child)::after { right: -20px; }
+}

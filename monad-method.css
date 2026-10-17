@@ -1,0 +1,126 @@
+/* Bounded Monad reference: warm paper, serif headings and illustrated asymmetric panels. */
+#growth-operations, #operating-trio {
+  --method-paper: #f8f3f1;
+  --method-ink: #242424;
+  --method-muted: #50504d;
+  --method-line: #d8d3d0;
+  --method-white: #ffffff;
+  --method-mint: #dceee4;
+  --method-sky: #d6dff2;
+  --method-coral: #f3c7b7;
+  --method-gold: #eee0bc;
+  --method-accent: #9d3051;
+  --method-serif: "Inter", Georgia, serif;
+  --method-mono: "Inter", ui-monospace, monospace; /* taste-skill-ignore: owner explicitly requests Monad's technical typography. */
+  --method-gap: 16px;
+  --method-pad: 32px;
+  --method-radius: 24px;
+  padding-block: 88px;
+  color: var(--method-ink);
+  background: var(--method-paper);
+}
+#growth-operations .flow-label { color: var(--method-muted); font: 400 14px/1.5 var(--method-mono); }
+#growth-operations h2 { color: var(--method-ink); font: 400 clamp(32px, 4vw, 56px)/1.12 var(--method-serif); letter-spacing: -.04em; }
+#growth-operations .flow-philosophy-sub { max-width: 65ch; margin-top: 24px; color: var(--method-muted); font-size: 18px; }
+.method-bento { display: grid; grid-template-columns: 1fr 1.65fr; align-items: stretch; gap: var(--method-gap); margin-top: 40px; }
+.method-panel { border: 1px solid var(--method-line); border-radius: var(--method-radius); overflow: hidden; } /* taste-skill-ignore: outlined panels are explicit in owner's Monad reference. */
+#growth-operations .growth-plugin { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; min-width: 0; margin: 0; padding: var(--method-pad); color: var(--method-ink); background: var(--method-paper); }
+#growth-operations .growth-plugin-label { color: var(--method-muted); font: 400 14px/1.5 var(--method-mono); }
+#growth-operations .growth-plugin-label strong { max-width: none; color: var(--method-ink); font: 400 24px/1.2 var(--method-serif); letter-spacing: -.025em; }
+#growth-operations .growth-plugin-statement { color: var(--method-ink); font-size: 18px; line-height: 1.55; }
+#growth-operations .growth-plugin-gloss { margin-top: 16px; color: var(--method-muted); font-size: 16px; }
+#growth-operations .growth-connection { display: flex; flex-direction: column; gap: 16px; margin: 0 -16px -16px; padding: 24px 16px; border-radius: 16px; background: linear-gradient(160deg, var(--method-paper), var(--method-coral), var(--method-sky)); } /* taste-skill-ignore: owner's reference uses contained pastel washes behind pipeline illustrations. */
+#growth-operations .growth-resources { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-self: stretch; margin: 0; color: var(--method-ink); text-align: center; }
+#growth-operations .growth-resources li { display: block; padding: 8px 12px; border: 1px solid var(--method-line); border-radius: 12px; color: var(--method-ink); background: var(--method-white); font: 400 14px/1.5 var(--method-mono); } /* taste-skill-ignore: these are illustrated resource nodes per owner reference. */
+#growth-operations .growth-connector { color: var(--method-muted); font-size: 24px; line-height: 1; transform: rotate(90deg); }
+#growth-operations .growth-partner { width: auto; max-width: 100%; padding: 24px 32px; border: 1px solid var(--method-line); border-radius: 16px; color: var(--method-ink); background: var(--method-white); } /* taste-skill-ignore: illustrated coordinator node. */
+#growth-operations .growth-partner strong { color: var(--method-ink); font: 400 24px/1.1 var(--method-serif); letter-spacing: -.025em; }
+#growth-operations .growth-partner > span { margin-top: 12px; font: 400 14px/1.5 var(--method-mono); }
+.method-outcomes { display: grid; grid-template-rows: repeat(3,1fr); gap: var(--method-gap); min-width: 0; }
+.method-outcome { display: grid; grid-template-columns: 1fr .85fr; gap: 24px; align-items: center; min-height: 220px; padding: var(--method-pad); }
+.method-outcome > div:first-child { min-width: 0; }
+.method-symbol { display: block; margin-bottom: 16px; color: var(--method-ink); font-size: 32px; line-height: 1; }
+#growth-operations .method-outcome h3 { max-width: none; margin: 0 0 12px; color: var(--method-ink); font: 400 32px/1.12 var(--method-serif); letter-spacing: -.025em; }
+.method-outcome p { margin: 0; color: var(--method-muted); font-size: 16px; line-height: 1.55; }
+.method-art { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; min-height: 180px; gap: 8px; isolation: isolate; }
+.method-art::before { content: ''; position: absolute; z-index: -1; inset: -48px; background: radial-gradient(ellipse, var(--art-color), transparent 70%); } /* taste-skill-ignore: contained illustration wash matches the supplied Monad image. */
+.method-outcome--deploy { --art-color: var(--method-coral); }
+.method-outcome--measure { --art-color: var(--method-mint); }
+.method-outcome--optimize { --art-color: var(--method-gold); }
+.method-art > span, .method-art > strong { display: block; padding: 8px 12px; border: 1px solid var(--method-line); border-radius: 12px; color: var(--method-ink); background: var(--method-white); font: 400 14px/1.5 var(--method-mono); } /* taste-skill-ignore: conceptual pipeline nodes in owner reference. */
+.method-art > i { color: var(--method-muted); font-style: normal; line-height: 1; }
+.method-collection { display: flex; align-items: end; gap: 8px; height: 56px; }
+.method-collection i { display: block; width: 18px; height: 32px; border-radius: 16px; background: var(--method-mint); border: 1px solid var(--method-muted); } /* taste-skill-ignore: illustrative connected data, no numeric values or implied performance. */
+.method-collection i:nth-child(2n) { height: 48px; }
+.method-collection i:nth-child(3) { height: 40px; }
+#growth-operations .growth-result { color: var(--method-muted); font: 400 14px/1.5 var(--method-mono); }
+#growth-operations .growth-primary, #operating-trio .growth-primary { min-height: 52px; margin-top: 24px; border: 0; border-radius: 100px; background: var(--method-ink); color: var(--method-white); font: 400 16px/1.4 var(--method-mono); }
+#growth-operations .growth-primary:hover, #operating-trio .growth-primary:hover { color: var(--method-white); background: var(--method-accent); }
+#growth-operations :focus-visible, #operating-trio :focus-visible { outline: 3px solid var(--method-accent); outline-offset: 5px; }
+#operating-trio .flow-section-heading { align-items: center; gap: 40px; }
+#operating-trio h2 { color: var(--method-ink); font: 400 clamp(36px,4.4vw,62px)/1.1 var(--method-serif); letter-spacing: -.04em; }
+#operating-trio .flow-section-heading > p { color: var(--method-muted); font-size: 18px; }
+#operating-trio .flow-trio-steps { display: grid; grid-template-columns: 1fr 1.65fr; gap: var(--method-gap); margin-top: 40px; }
+#operating-trio .flow-trio-step { display: grid; grid-template-columns: 1fr .95fr; gap: 24px; align-items: center; min-width: 0; padding: var(--method-pad); border: 1px solid var(--method-line); border-radius: var(--method-radius); color: var(--method-ink); background: transparent; } /* taste-skill-ignore: owner asks for Monad's asymmetric outlined feature panels. */
+#operating-trio .flow-trio-step:first-child { grid-row: span 2; display: flex; flex-direction: column; align-items: stretch; justify-content: space-between; gap: 40px; }
+#operating-trio .flow-trio-step::after { display: none; }
+#operating-trio .flow-trio-step > div { min-width: 0; padding-top: 0; }
+#operating-trio .flow-trio-step > div > p { color: var(--method-muted); font-size: 16px; line-height: 1.55; }
+#operating-trio .flow-trio-step > div > p:first-child { color: var(--method-muted); font: 400 14px/1.5 var(--method-mono); }
+#operating-trio .flow-trio-step h3 { max-width: none; margin: 12px 0 16px; color: var(--method-ink); font: 400 32px/1.1 var(--method-serif); letter-spacing: -.025em; }
+#operating-trio .trio-art { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; min-height: 200px; padding: 24px 0; isolation: isolate; }
+.trio-art::before { content: ''; position: absolute; z-index: -1; inset: -40px; background: radial-gradient(ellipse, var(--trio-wash), transparent 72%); } /* taste-skill-ignore: the reference shows soft wash behind each conceptual illustration. */
+.trio-art--mindset { --trio-wash: var(--method-coral); }
+.trio-art--toolset { --trio-wash: var(--method-mint); }
+.trio-art--skillset { --trio-wash: var(--method-gold); }
+.trio-art span, .trio-art strong { display: block; padding: 10px 14px; border: 1px solid var(--method-line); border-radius: 12px; color: var(--method-ink); background: var(--method-white); font: 400 14px/1.5 var(--method-mono); text-align: center; } /* taste-skill-ignore: illustrative workflow nodes from requested reference. */
+.trio-art > div { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.trio-art i { color: var(--method-muted); font-style: normal; }
+#operating-trio .flow-convergence { display: none; }
+#operating-trio .flow-growth { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: var(--method-gap); padding: 32px 40px; border-radius: var(--method-radius); color: var(--method-ink); background: var(--method-sky); }
+#operating-trio .flow-growth span { color: var(--method-ink); font: 400 14px/1.5 var(--method-mono); }
+#operating-trio .flow-growth strong { max-width: 100%; color: var(--method-ink); font: 400 clamp(54px,7vw,100px)/1 var(--method-serif); letter-spacing: -.04em; }
+@media (max-width: 1000px) {
+  #growth-operations, #operating-trio { --method-pad: 24px; }
+  .method-bento, #operating-trio .flow-trio-steps { grid-template-columns: 1fr 1.3fr; }
+  .method-outcome, #operating-trio .flow-trio-step { grid-template-columns: 1fr; gap: 16px; }
+  .method-symbol { display: none; }
+  .method-art { min-height: 160px; }
+  #operating-trio .trio-art { min-height: 180px; }
+}
+@media (max-width: 767px) {
+  #growth-operations, #operating-trio { padding-block: 60px; --method-pad: 24px; }
+  #growth-operations h2 { font-size: clamp(23px,6.1vw,40px); line-height: 1.2; letter-spacing: -.04em; }
+  #growth-operations .flow-philosophy-sub, #operating-trio .flow-section-heading > p { font-size: 16px; }
+  .method-bento, #operating-trio .flow-trio-steps { grid-template-columns: 1fr; margin-top: 30px; }
+  .method-outcome { grid-template-columns: 1fr; gap: 24px; }
+  .method-outcome > div:first-child { max-width: none; }
+  .method-art { min-height: 180px; }
+  #growth-operations .method-outcome h3 { font-size: 32px; }
+  #growth-operations .growth-plugin-statement { font-size: 18px; }
+  #growth-operations .growth-resources { font-size: 16px; gap: 8px; }
+  #growth-operations .growth-partner { padding: 24px; }
+  #growth-operations .growth-result { max-width: none; font-size: 14px; }
+  #growth-operations .growth-result > span { margin-inline: 4px; }
+  #growth-operations .growth-primary, #operating-trio .growth-primary { font-size: 14px; width: 100%; }
+  #operating-trio .flow-section-heading { grid-template-columns: 1fr; gap: 24px; }
+  #operating-trio h2 { font-size: clamp(36px,9.5vw,54px); }
+  #operating-trio .flow-trio-step:first-child { grid-row: auto; }
+  #operating-trio .flow-trio-step { display: block; }
+  #operating-trio .trio-art { margin-top: 24px; min-height: 200px; }
+  #operating-trio .flow-growth { flex-direction: column; align-items: flex-start; gap: 24px; padding: 24px; }
+  #operating-trio .flow-growth strong { font-size: clamp(44px,14vw,72px); }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .method-bento { grid-template-columns: 1fr; }
+  #growth-operations .growth-plugin { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: 24px; }
+  #growth-operations .growth-plugin-label { grid-column: 1; }
+  #growth-operations .growth-plugin-copy { grid-column: 1; }
+  #growth-operations .growth-connection { grid-column: 2; grid-row: 1 / span 2; margin: 0; align-self: stretch; justify-content: center; }
+  .method-outcomes { grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-rows: auto; }
+  .method-outcome { align-content: space-between; align-items: start; padding: 20px; }
+  #growth-operations .method-outcome h3 { font-size: 28px; }
+  #operating-trio .flow-trio-steps { grid-template-columns: 1fr; }
+  #operating-trio .flow-trio-step, #operating-trio .flow-trio-step:first-child { display: grid; grid-template-columns: 1fr 1fr; grid-row: auto; gap: 24px; align-items: center; }
+}

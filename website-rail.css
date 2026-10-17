@@ -1,0 +1,122 @@
+.website-showcase {
+  --web-paper: #f8f3f1;
+  --web-white: #ffffff;
+  --web-ink: #242424;
+  --web-note: #50504d;
+  --web-mint: #e3eee6;
+  --web-accent: #9d3051;
+  --web-overlay: rgb(12 18 24 / 92%);
+  margin-top: 80px;
+  padding: 48px 0 0;
+  border-radius: 0;
+  color: var(--web-ink);
+  background: var(--web-paper);
+  box-shadow: none; /* taste-skill-ignore: remove inherited resting shadow. */
+  overflow: visible;
+  scroll-margin-top: 100px;
+}
+.website-showcase .website-showcase-heading { grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: end; }
+.website-showcase .website-showcase-heading h3 { margin: 0; max-width: 760px; color: var(--web-ink); font: 400 clamp(36px,4.4vw,64px)/1.08 "Inter",Georgia,serif; letter-spacing: -.035em; }
+.website-showcase .website-showcase-heading > p { max-width: 55ch; margin: 0; color: var(--web-note); font-size: 18px; line-height: 1.55; }
+.website-rail-hint { margin: 28px 0 24px; color: var(--web-note); font-size: 16px; }
+.website-showcase .website-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin: 0; }
+.website-showcase .website-card {
+  position: relative;
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  height: 600px;
+  padding: 0;
+  border: 0;
+  border-radius: 32px;
+  background: var(--web-ink);
+  color: var(--web-white);
+  box-shadow: none; /* taste-skill-ignore: remove inherited resting shadow. */
+  overflow: hidden;
+  isolation: isolate;
+  transition: none;
+}
+.website-showcase .website-card:hover { transform: none; border: 0; background: var(--web-ink); box-shadow: none; } /* taste-skill-ignore: remove inherited hover shadow. */
+.website-scene { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.website-showcase .website-card::before { position: absolute; inset: 0; z-index: -1; content: ''; background: rgb(0 0 0 / 22%); }
+.website-showcase .website-card--osen .website-scene { object-position: center 40%; }
+.website-showcase .website-card--maria .website-scene { object-position: 78% center; }
+.website-showcase .website-card--fide .website-scene { object-position: 50% center; }
+.website-showcase .website-card--onici .website-scene { object-position: center; }
+.website-select { position: absolute; inset: 0; width: 100%; height: 100%; padding: 24px; display: flex; justify-content: center; align-items: flex-end; border: 0; color: var(--web-white); background: transparent; font-family: "Inter",sans-serif; cursor: pointer; text-align: left; }
+.website-select[hidden] { display: none; }
+.website-logo { position: absolute; bottom: 28px; left: 50%; display: grid; place-items: center; width: 90px; height: 70px; padding: 10px; border-radius: 16px; background: var(--web-white); transform: translateX(-50%); }
+.website-logo img { width: 100%; height: 100%; object-fit: contain; }
+.website-card--taidat .website-logo { width: 70px; }
+.website-card--taidat .website-logo img { object-fit: cover; object-position: left center; }
+.website-select-label { position: absolute; bottom: 128px; left: 50%; writing-mode: vertical-rl; transform: translateX(-50%) rotate(180deg); color: var(--web-white); font-size: 22px; font-weight: 500; line-height: 1.3; white-space: nowrap; }
+.website-select-symbol { position: absolute; top: 24px; right: 24px; display: grid; width: 40px; height: 40px; place-items: center; border-radius: 100px; color: var(--web-ink); background: var(--web-white); font: 400 28px/1 "Inter",sans-serif; }
+.website-detail { position: absolute; bottom: 24px; left: 24px; right: 24px; padding: 24px; border-radius: 24px; color: var(--web-white); background: var(--web-overlay); }
+.website-detail[hidden] { display: none; }
+.website-showcase .website-status { position: static; display: block; min-height: 0; padding: 0; border: 0; border-radius: 0; color: var(--web-white); background: transparent; box-shadow: none; font: 400 14px/1.5 "Inter",sans-serif; } /* taste-skill-ignore: remove inherited status shadow. */
+.website-showcase .website-status::before { content: none; }
+.website-detail h4 { margin: 10px 0 12px; color: var(--web-white); font: 400 32px/1.12 "Inter",Georgia,serif; letter-spacing: -.025em; }
+.website-description { margin: 0 0 20px; color: var(--web-white); font-size: 16px; line-height: 1.5; }
+.website-project-link { display: inline-flex; gap: 24px; align-items: center; min-height: 44px; padding: 10px 18px; border-radius: 100px; color: var(--web-ink); background: var(--web-white); text-decoration: none; font-size: 16px; line-height: 1.4; }
+.website-project-link:hover { color: var(--web-white); background: var(--web-accent); }
+.website-project-link:active { transform: translateY(1px); }
+.website-project-domain { display: block; margin-top: 12px; color: var(--web-white); font-size: 14px; }
+.website-showcase .website-grid[data-enhanced='true'] { display: flex; height: 600px; }
+.website-grid[data-enhanced='true'] .website-card { flex: 1 1 0; height: 100%; }
+.website-grid[data-enhanced='true'] .website-card:not([data-active='true'])::before { background: rgb(0 0 0 / 62%); }
+.website-grid[data-enhanced='true'] .website-card[data-active='true'] { flex: 4.2 1 0; }
+.website-grid[data-enhanced='true'] .website-card[data-active='true'] .website-select { height: 110px; }
+.website-grid[data-enhanced='true'] .website-card[data-active='true'] .website-logo { top: 24px; left: 24px; bottom: auto; width: 110px; transform: none; }
+.website-grid[data-enhanced='true'] .website-card[data-active='true'] .website-select-label { display: none; }
+.website-grid[data-enhanced='true'] .website-card[data-active='true'] .website-select-symbol { font-size: 0; }
+.website-grid[data-enhanced='true'] .website-card[data-active='true'] .website-select-symbol::before { content: '−'; font-size: 28px; }
+.website-media-credits { margin: 18px 0 32px; color: var(--web-note); font-size: 16px; }
+.website-media-credits summary { width: fit-content; min-height: 44px; padding-block: 10px; cursor: pointer; }
+.website-media-credits p { max-width: 60ch; }
+.website-media-credits ul { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; list-style: none; }
+.website-media-credits a { color: var(--web-ink); text-underline-offset: 4px; }
+.website-showcase :focus-visible { outline: 3px solid var(--web-accent); outline-offset: 4px; }
+.website-select:focus-visible { outline: 3px solid var(--web-white); outline-offset: -6px; }
+.website-showcase .miniapp-portfolio-card { margin-top: 48px; border: 0; border-radius: 32px; grid-template-columns: 1.25fr 1fr; background: var(--web-mint); color: var(--web-ink); box-shadow: none; } /* taste-skill-ignore: remove inherited resting shadow. */
+.website-showcase .miniapp-portfolio-card:hover { transform: none; box-shadow: none; } /* taste-skill-ignore: remove inherited hover shadow. */
+.website-showcase .miniapp-portfolio-copy { color: var(--web-ink); font-family: "Inter",sans-serif; }
+.website-showcase .miniapp-portfolio-copy span { font-family: "Inter",sans-serif; }
+.website-showcase .miniapp-portfolio-copy > strong { color: var(--web-ink); font: 400 36px/1.12 "Inter",Georgia,serif; letter-spacing: -.025em; }
+.website-showcase .miniapp-kicker { color: var(--web-note); font: 400 16px/1.5 "Inter",sans-serif; letter-spacing: 0; text-transform: none; }
+.website-showcase .miniapp-description { color: var(--web-note); font-size: 16px; }
+.website-showcase .miniapp-capabilities span { border: 0; color: var(--web-ink); background: var(--web-white); font-size: 14px; }
+.website-showcase .miniapp-cta { color: var(--web-white); background: var(--web-ink); box-shadow: none; font-size: 16px; } /* taste-skill-ignore: remove inherited CTA shadow. */
+@media (prefers-reduced-motion:no-preference) {
+  .website-grid[data-enhanced='true'] .website-card { transition: flex-grow 400ms ease; }
+  .website-card.growth-in-view .website-scene { animation: website-photo-enter 750ms ease-out both; }
+  .website-card[data-active='true'] .website-detail { animation: website-detail-enter 250ms ease-out both; }
+}
+@keyframes website-photo-enter { from { opacity: .4; transform: scale(1.04); } to { opacity: 1; transform: scale(1); } }
+@keyframes website-detail-enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width:1100px) {
+  .website-showcase .website-showcase-heading { grid-template-columns: 1fr; gap: 24px; }
+  .website-showcase .website-grid[data-enhanced='true'] { display: flex; flex-direction: column; height: auto; }
+  .website-grid[data-enhanced='true'] .website-card, .website-grid[data-enhanced='true'] .website-card[data-active='true'] { flex: none; width: 100%; height: 100px; }
+  .website-grid[data-enhanced='true'] .website-card[data-active='true'] { height: 560px; }
+  .website-select { justify-content: flex-start; align-items: center; padding: 20px; }
+  .website-logo { left: 20px; bottom: 16px; width: 90px; height: 68px; transform: none; }
+  .website-select-label { position: static; padding-left: 110px; padding-right: 60px; writing-mode: horizontal-tb; transform: none; font-size: 20px; white-space: normal; }
+  .website-select-symbol { top: 30px; right: 24px; }
+  .website-showcase .website-card--maria .website-scene { object-position: 78% 50%; }
+  .website-showcase .miniapp-portfolio-card { grid-template-columns: 1fr; }
+}
+@media (max-width:640px) {
+  .website-showcase { margin-inline: 0; margin-top: 56px; padding-block: 32px 0; }
+  .website-showcase .website-showcase-heading h3 { font-size: 30px; }
+  .website-showcase .website-showcase-heading > p { font-size: 16px; }
+  .website-showcase .website-grid { grid-template-columns: 1fr; gap: 12px; }
+  .website-showcase .website-card, .website-showcase .website-card:last-child { grid-column: auto; border-radius: 24px; }
+  .website-grid[data-enhanced='true'] .website-card[data-active='true'] { height: 580px; }
+  .website-detail { left: 16px; right: 16px; bottom: 16px; padding: 24px; }
+  .website-detail h4 { font-size: 28px; }
+  .website-select-label { padding-left: 100px; padding-right: 38px; font-size: 18px; }
+  .website-select-symbol { right: 16px; width: 32px; height: 32px; top: 34px; }
+  .website-logo { left: 16px; width: 80px; }
+  .website-showcase .miniapp-portfolio-card { margin-top: 32px; border-radius: 24px; }
+  .website-showcase .miniapp-portfolio-copy > strong { font-size: 28px; }
+}

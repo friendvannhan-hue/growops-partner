@@ -81,6 +81,7 @@ body .scroll-progress i { background: var(--site-action); }
 body .growth-hero h1 { color: var(--site-ink); font-family: var(--site-font); font-size: var(--site-display); font-weight: 750; line-height: 1.08; letter-spacing: -.045em; text-align: left; }
 body .growth-hero h1 > span { display: block; }
 body .growth-hero h1 > span:last-child { color: var(--site-accent-ink); }
+body .growth-hero .growth-tagline { margin: 16px 0 0; font-size: clamp(20px, 2vw, 28px); line-height: 1.4; font-weight: 600; letter-spacing: -.02em; }
 body .growth-hero-bottom { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 64px; margin-top: 36px; align-items: start; }
 .hero-positioning { margin: 0; color: var(--site-accent-ink); font-size: var(--site-lead); font-weight: 600; }
 body .growth-hero .growth-sub { grid-column: 1; margin: 0; max-width: 58ch; text-align: left; color: var(--site-ink); font-size: var(--site-lead); }

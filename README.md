@@ -2,15 +2,10 @@
 
 Website Growth Operations, CDP và Customer 360.
 
-- Website: https://friendvannhan-hue.github.io/growops-partner/
-- Hồ sơ PDF đầy đủ: https://friendvannhan-hue.github.io/growops-partner/downloads/GrowOps-Partner.pdf
+Website: https://friendvannhan-hue.github.io/growops-partner/
 
-Cập nhật ngày 23/11/2026: trang chủ đã tinh chỉnh, lộ trình đồng hành 5 bước, chi phí phát sinh và PDF đầy đủ 26 trang.
+Bản giao diện đã duyệt, đồng bộ ngày 17/10/2026.
 
 ## Xuất bản
 
-GitHub Pages: nhánh `main`, thư mục `/ (root)`. Các tài nguyên dùng đường dẫn tương đối để hoạt động trong `/growops-partner/`.
-
-## Xem tại máy
-
-Chạy `npm run dev`, sau đó mở http://localhost:4173/.
+GitHub Pages: nhánh `main`, thư mục `/ (root)`. Nội dung sử dụng đường dẫn tương đối để hoạt động trong `/growops-partner/`.

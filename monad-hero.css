@@ -90,7 +90,7 @@
   .monad-wires { display: none; }
   .monad-sources { width: 100%; height: auto; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--monad-space-sm); padding: 0; }
   .monad-sources > span { width: 100%; justify-content: center; text-align: center; font-size: 14px; }
-  .monad-sources > span:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .monad-sources > span:last-child { grid-column: 1 / -1; }
   .monad-core { flex: 0 0 320px; transform: scale(.92); }
   .monad-core::before, .monad-core::after { content: '↓'; position: absolute; left: 50%; color: var(--monad-accent); font-size: 24px; transform: translateX(-50%); }
   .monad-core::before { top: -24px; }

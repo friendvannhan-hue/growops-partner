@@ -21,8 +21,9 @@ test('the expanded catalogue preserves the original twelve services and agreed p
   const cards=[...html.matchAll(/<article class="service-card[^>]*data-service-groups="([^"]+)"/g)].map(match=>({groups:match[1].split(/\s+/)}));
   assert.equal(cards.length,14);
   assert.deepEqual(countServiceGroups(cards),{all:14,cdp:2,website:3,private:2,zalo:2,social:3,analytics:1,ai:1});
-  assert.equal([...html.matchAll(/class="service-price"[^>]*>Nhắn Zalo nhận báo giá/g)].length,13);
-  assert.equal([...html.matchAll(/class="service-price-amount">399\.000đ</g)].length,1);
+  assert.equal([...html.matchAll(/class="service-price"[^>]*>Nhắn Zalo nhận báo giá/g)].length,14);
+  assert.equal([...html.matchAll(/class="service-price-amount">Liên hệ</g)].length,14);
+  assert.equal(html.includes('399.000'),false);
   for(const title of ['Dịch vụ thiết kế Landing Page','Đào tạo và hỗ trợ sử dụng CNVCDP','Thiết kế ảnh sản phẩm đăng sàn TMĐT'])assert.ok(html.includes(`<h3>${title}</h3>`));
 });
 

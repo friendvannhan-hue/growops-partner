@@ -2,7 +2,7 @@
 
 Mã nguồn website GrowOps đang được công bố trên Cloudflare Workers và GitHub Pages.
 
-- Website chính: https://growops-partner.nhannv-working.workers.dev/
+- Website chính: https://growops-partner.quytbio.com/
 - GitHub Pages: https://friendvannhan-hue.github.io/growops-partner/
 
 Đồng bộ bản đã duyệt ngày 25/11/2026, gồm định vị AI, 14 thương hiệu, 6 năng lực, cụm CDP, lộ trình đồng hành, trang dịch vụ và Social. Các mục chi tiết được mở sẵn theo yêu cầu của anh (xác nhận lại 25/11/2026).

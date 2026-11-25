@@ -25,7 +25,7 @@ export const categories = [
         "cta": "Quan tâm OA",
         "chipTitle": "Chào khách mới",
         "chipDetail": "Mẫu tin tham khảo",
-        "transcript": "LS2 Store VN — Quyền lợi lần đầu mua hàng. Chào khách hàng anh Nhân, mã 0967347781. LS2 cảm ơn khách đã quan tâm và tặng voucher cho khách mới. Ưu đãi giảm 5% cho đơn đầu tiên tại LS2; miễn phí vận chuyển cho đơn hàng tại khu vực Hồ Chí Minh; giảm 50% dịch vụ vệ sinh nón tại LS2. Khách chọn sản phẩm và sử dụng quyền lợi trong lần mua đầu tiên. Quyền lợi có thời hạn 7 ngày từ thời điểm nhận voucher. Nút trong mẫu: Quan tâm OA."
+        "transcript": "LS2 Store VN — Quyền lợi lần đầu mua hàng. Chào khách hàng theo tên, kèm mã khách hàng (đã che). LS2 cảm ơn khách đã quan tâm và tặng voucher cho khách mới. Ưu đãi giảm 5% cho đơn đầu tiên tại LS2; miễn phí vận chuyển cho đơn hàng tại khu vực Hồ Chí Minh; giảm 50% dịch vụ vệ sinh nón tại LS2. Khách chọn sản phẩm và sử dụng quyền lợi trong lần mua đầu tiên. Quyền lợi có thời hạn 7 ngày từ thời điểm nhận voucher. Nút trong mẫu: Quan tâm OA."
       },
       {
         "id": "onici-welcome",
@@ -96,7 +96,7 @@ export const categories = [
         "cta": "Xem mã ưu đãi",
         "chipTitle": "Ưu đãi theo sự kiện",
         "chipDetail": "Mẫu tin tham khảo",
-        "transcript": "LS2 Store VN — Tặng voucher giảm 10% mừng khai trương chi nhánh LS2. Chào Nguyễn Nguyễn Văn Nhân, mã khách hàng 0967347781. LS2 gửi voucher khi mua sắm trực tiếp tại cửa hàng. Voucher giảm 10% trên giá trị đơn hàng; thời gian áp dụng 14 ngày từ ngày nhận voucher. Địa điểm: 237 Hồng Bàng, Phường Chợ Lớn, Hồ Chí Minh. Thời gian khai trương từ 16/10/2026 đến hết 18/10/2026. Voucher có thời hạn sử dụng. Thẻ voucher hiển thị giảm 10%, áp dụng tại cửa hàng LS2 Store VN, HSD 09/10/2026–23/10/2026. Nút trong mẫu: Xem mã ưu đãi."
+        "transcript": "LS2 Store VN — Tặng voucher giảm 10% mừng khai trương chi nhánh LS2. Chào khách hàng theo tên, kèm mã khách hàng (đã che). LS2 gửi voucher khi mua sắm trực tiếp tại cửa hàng. Voucher giảm 10% trên giá trị đơn hàng; thời gian áp dụng 14 ngày từ ngày nhận voucher. Địa điểm: 237 Hồng Bàng, Phường Chợ Lớn, Hồ Chí Minh. Thời gian khai trương từ 16/10/2026 đến hết 18/10/2026. Voucher có thời hạn sử dụng. Thẻ voucher hiển thị giảm 10%, áp dụng tại cửa hàng LS2 Store VN, HSD 09/10/2026–23/10/2026. Nút trong mẫu: Xem mã ưu đãi."
       },
       {
         "id": "taidat-voucher",
@@ -117,7 +117,7 @@ export const categories = [
         "cta": "Xem mã ưu đãi",
         "chipTitle": "Voucher tri ân",
         "chipDetail": "Mẫu tin tham khảo",
-        "transcript": "Tài Đạt tặng voucher tri ân. Chào Nguyễn Nguyễn Văn Nhân, mã khách hàng 0967347781. Tài Đạt cảm ơn khách đã lựa chọn và dành thời gian đánh giá trải nghiệm mua hàng; mỗi chia sẻ giúp phục vụ cộng đồng yêu xe tốt hơn. Tặng một mã ưu đãi cho lần mua tiếp theo. Khách lưu tin nhắn và xuất trình voucher cho thu ngân khi mua trực tiếp tại hệ thống Tài Đạt. Voucher 100.000 VNĐ, áp dụng đơn hàng từ 500.000đ, HSD 16/09/2026–16/10/2026. Nút trong mẫu: Xem mã ưu đãi."
+        "transcript": "Tài Đạt tặng voucher tri ân. Chào khách hàng theo tên, kèm mã khách hàng (đã che). Tài Đạt cảm ơn khách đã lựa chọn và dành thời gian đánh giá trải nghiệm mua hàng; mỗi chia sẻ giúp phục vụ cộng đồng yêu xe tốt hơn. Tặng một mã ưu đãi cho lần mua tiếp theo. Khách lưu tin nhắn và xuất trình voucher cho thu ngân khi mua trực tiếp tại hệ thống Tài Đạt. Voucher 100.000 VNĐ, áp dụng đơn hàng từ 500.000đ, HSD 16/09/2026–16/10/2026. Nút trong mẫu: Xem mã ưu đãi."
       },
       {
         "id": "maria-cart",
@@ -188,7 +188,7 @@ export const categories = [
         "cta": "Quan tâm OA LS2",
         "chipTitle": "Thông báo đơn hàng",
         "chipDetail": "Mẫu tin tham khảo",
-        "transcript": "LS2 Store VN — Xác nhận đơn hàng. Xin chào nhan nhan. LS2 cảm ơn khách đã tin tưởng lựa chọn sản phẩm. Đơn hàng đã tiếp nhận: mã #ls2vn1247; trạng thái Đóng gói gửi hàng; ngày đặt 17:59 23/09/2026. LS2 mong mang đến trải nghiệm tốt khi mua tại cửa hàng và các nền tảng online. Khách cần điều chỉnh thông tin nhận hàng hoặc hỗ trợ đơn hàng có thể liên hệ LS2 Store VN. Nút trong mẫu: Quan tâm OA LS2 Store VN."
+        "transcript": "LS2 Store VN — Xác nhận đơn hàng. Xin chào khách hàng theo tên (đã che). LS2 cảm ơn khách đã tin tưởng lựa chọn sản phẩm. Đơn hàng đã tiếp nhận: mã #ls2vn1247; trạng thái Đóng gói gửi hàng; ngày đặt 17:59 23/09/2026. LS2 mong mang đến trải nghiệm tốt khi mua tại cửa hàng và các nền tảng online. Khách cần điều chỉnh thông tin nhận hàng hoặc hỗ trợ đơn hàng có thể liên hệ LS2 Store VN. Nút trong mẫu: Quan tâm OA LS2 Store VN."
       },
       {
         "id": "cellphones-care",
@@ -209,7 +209,7 @@ export const categories = [
         "cta": "Xem mã ưu đãi",
         "chipTitle": "Chăm sóc thiết bị",
         "chipDetail": "Mẫu tin tham khảo",
-        "transcript": "CellphoneS — Chăm sóc thiết bị. Xin chào Quý Khách, mã khách hàng 84967347781. Thiết bị APPLE MACBOOK PRO 14 M1 từng là lựa chọn tốt; khi nhu cầu đa nhiệm tăng, máy có thể giật lag hoặc pin không đáp ứng đủ ngày dài. CellphoneS tặng voucher miễn phí 100% dịch vụ vệ sinh và kiểm tra sức khỏe thiết bị tại Điện Thoại Vui. Ưu đãi 100%, áp dụng tại tất cả cửa hàng, HSD 26/11/2026. Các nút trong mẫu: Xem mã ưu đãi; XEM CHI TIẾT."
+        "transcript": "CellphoneS — Chăm sóc thiết bị. Xin chào Quý Khách, kèm mã khách hàng (đã che). Thiết bị APPLE MACBOOK PRO 14 M1 từng là lựa chọn tốt; khi nhu cầu đa nhiệm tăng, máy có thể giật lag hoặc pin không đáp ứng đủ ngày dài. CellphoneS tặng voucher miễn phí 100% dịch vụ vệ sinh và kiểm tra sức khỏe thiết bị tại Điện Thoại Vui. Ưu đãi 100%, áp dụng tại tất cả cửa hàng, HSD 26/11/2026. Các nút trong mẫu: Xem mã ưu đãi; XEM CHI TIẾT."
       },
       {
         "id": "tyres-care",
@@ -230,7 +230,7 @@ export const categories = [
         "cta": "Mở Mini App",
         "chipTitle": "Nhắc lịch dịch vụ",
         "chipDetail": "Mẫu tin tham khảo",
-        "transcript": "Lốp Quốc Dân National tyres — Nhắc lịch chăm sóc xe. Xin chào Nguyễn Văn Nhân. Nhắc lịch đảo lốp, cân mâm và kiểm tra thước lái, được hỗ trợ 100%, không phát sinh chi phí tại các cửa hàng Lốp Quốc Dân. Tin giới thiệu thêm dịch vụ bảo dưỡng xe, ắc quy và bảo hiểm với giá tốt, là những quyền lợi muốn dành tặng khách. Mời khách ghé Mini App để theo dõi quyền lợi thành viên. Tên khách hàng Nguyễn Văn Nhân; mã khách hàng 0967347781. Nút trong mẫu: Mini App của Lốp Quốc Dân."
+        "transcript": "Lốp Quốc Dân National tyres — Nhắc lịch chăm sóc xe. Xin chào khách hàng theo tên (đã che). Nhắc lịch đảo lốp, cân mâm và kiểm tra thước lái, được hỗ trợ 100%, không phát sinh chi phí tại các cửa hàng Lốp Quốc Dân. Tin giới thiệu thêm dịch vụ bảo dưỡng xe, ắc quy và bảo hiểm với giá tốt, là những quyền lợi muốn dành tặng khách. Mời khách ghé Mini App để theo dõi quyền lợi thành viên. Tên và mã khách hàng (đã che). Nút trong mẫu: Mini App của Lốp Quốc Dân."
       },
       {
         "id": "fide-feedback",
@@ -280,7 +280,7 @@ export const categories = [
         "cta": "Xem mã ưu đãi",
         "chipTitle": "Tri ân khách hàng",
         "chipDetail": "Mẫu tin tham khảo",
-        "transcript": "LS2 Store VN gửi ưu đãi tri ân. Chào Nguyễn Nguyễn Văn Nhân, mã khách hàng 0967347781. LS2 cảm ơn khách đã đánh giá trải nghiệm mua hàng; mỗi chia sẻ giúp phục vụ cộng đồng yêu xe tốt hơn. LS2 tặng một mã ưu đãi cho lần mua tiếp theo. Khách lưu tin nhắn và xuất trình voucher cho thu ngân khi mua trực tiếp tại hệ thống LS2 Store VN. Voucher 100.000 VNĐ, áp dụng đơn hàng từ 500.000 VNĐ, HSD 12/09/2026–12/10/2026. Nút trong mẫu: Xem mã ưu đãi."
+        "transcript": "LS2 Store VN gửi ưu đãi tri ân. Chào khách hàng theo tên, kèm mã khách hàng (đã che). LS2 cảm ơn khách đã đánh giá trải nghiệm mua hàng; mỗi chia sẻ giúp phục vụ cộng đồng yêu xe tốt hơn. LS2 tặng một mã ưu đãi cho lần mua tiếp theo. Khách lưu tin nhắn và xuất trình voucher cho thu ngân khi mua trực tiếp tại hệ thống LS2 Store VN. Voucher 100.000 VNĐ, áp dụng đơn hàng từ 500.000 VNĐ, HSD 12/09/2026–12/10/2026. Nút trong mẫu: Xem mã ưu đãi."
       },
       {
         "id": "lotus-birthday",

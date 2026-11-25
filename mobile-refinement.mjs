@@ -66,7 +66,7 @@ export function setupMobileComparison(root) {
   extra.open = true;
   const summary = doc.createElement('summary');
   const rows = [...table.querySelectorAll('tbody tr')];
-  summary.textContent = `Xem thêm ${rows.length - 3} điểm khác biệt`;
+  summary.textContent = `Thêm ${rows.length - 3} điểm khác biệt`;
   extra.append(summary);
   rows.forEach((row, index) => {
     const article = doc.createElement('article');
@@ -98,7 +98,7 @@ if (typeof document !== 'undefined') {
   const media = matchMedia('(max-width: 767px)');
   for (const config of [
     { selector: '#solution-ecosystem .flow-solutions', title: 'h3', subtitle: '.solution-window-sub' },
-    { selector: '#operating-trio .flow-trio-steps', title: 'h3', subtitle: '.trio-step-copy h4' },
+    { selector: '#operating-trio .flow-trio-steps', title: 'h3', subtitle: '.trio-step-heading p' },
     { selector: '#tools .tool-atlas', title: 'h3', subtitle: '.tool-family-heading p' },
   ]) {
     const host = document.querySelector(config.selector);

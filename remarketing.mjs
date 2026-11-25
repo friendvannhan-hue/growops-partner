@@ -80,6 +80,10 @@ export function setupRemarketing(root, categories, view = globalThis) {
   const media = typeof view.matchMedia === 'function' ? view.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
   let state = { category: 0, item: 0 };
   let userPaused = Boolean(media.matches);
+  // Khách bấm/cuộn xem mẫu: chỉ dừng tạm, tự chạy lại sau RESUME_MS (anh muốn dải luôn tự chạy).
+  let browsing = false;
+  let resumeTimer;
+  const RESUME_MS = 8000;
   let hover = false;
   let focused = false;
   let inView = typeof view.IntersectionObserver !== 'function';
@@ -196,8 +200,8 @@ export function setupRemarketing(root, categories, view = globalThis) {
     content.append(messageView);
     content.addEventListener('mouseenter', () => { hover = true; updateMotion(); });
     content.addEventListener('mouseleave', () => { hover = false; updateMotion(); });
-    content.addEventListener('scroll', () => { userPaused = true; updateMotion(); }, { passive: true });
-    content.addEventListener('pointerdown', () => { userPaused = true; updateMotion(); });
+    content.addEventListener('scroll', () => holdBriefly(), { passive: true });
+    content.addEventListener('pointerdown', () => holdBriefly());
     screen.append(deviceStatus, header, content, element('div', 'rm-device-home'));
     const caption = element('figcaption', 'rm-source-caption');
     caption.append(element('span', 'rm-source-dot'), doc.createTextNode(actual ? 'Mẫu tin tham khảo' : 'Kịch bản minh họa'));
@@ -210,13 +214,15 @@ export function setupRemarketing(root, categories, view = globalThis) {
     const popups = element('div', 'rm-popups');
     popups.setAttribute('aria-hidden', 'true');
     const popupCopy = [
-      ['one', '✦', item.tag || category.label],
-      ['two', '↗', 'Kết nối đúng lúc'],
-      ['three', '♡', 'Thêm một lần nhớ Brand'],
+      ['one', '<svg class="ga-i" viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15Z" stroke="currentColor" stroke-linejoin="round"/><path d="M2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z" stroke="currentColor" stroke-linejoin="round"/></svg>', item.tag || category.label],
+      ['two', '<svg class="ga-i" viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>', 'Kết nối đúng lúc'],
+      ['three', '<svg class="ga-i" viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M22 8.86222C22 10.4087 21.4062 11.8941 20.3458 12.9929C17.9049 15.523 15.5374 18.1613 13.0053 20.5997C12.4249 21.1505 11.5042 21.1304 10.9488 20.5547L3.65376 12.9929C1.44875 10.7072 1.44875 7.01723 3.65376 4.73157C5.88044 2.42345 9.50794 2.42345 11.7346 4.73157L11.9998 5.00642L12.2648 4.73173C13.3324 3.6245 14.7864 3 16.3053 3C17.8242 3 19.2781 3.62444 20.3458 4.73157C21.4063 5.83045 22 7.31577 22 8.86222Z" stroke="currentColor" stroke-linejoin="round"/></svg>', 'Thêm một lần nhớ Brand'],
     ];
-    for (const [position, icon, text] of popupCopy) {
+    for (const [position, svg, text] of popupCopy) {
       const bubble = element('div', `rm-pop-bubble rm-pop-bubble--${position}`);
-      bubble.append(element('span', 'rm-pop-icon', icon), element('span', 'rm-pop-copy', text));
+      const badge = element('span', 'rm-pop-icon');
+      badge.innerHTML = svg; // Icon Iconoir tĩnh, không lấy từ dữ liệu
+      bubble.append(badge, element('span', 'rm-pop-copy', text));
       popups.append(bubble);
     }
     stage.replaceChildren(
@@ -310,7 +316,7 @@ export function setupRemarketing(root, categories, view = globalThis) {
   }
   function chooseCategory(index) {
     const selected = selectCategory(categories, state, index);
-    userPaused = true;
+    holdBriefly();
     if (selected === state) { updateMotion(); announce(); return; }
     state = selected;
     render();
@@ -318,7 +324,7 @@ export function setupRemarketing(root, categories, view = globalThis) {
   }
   function chooseItem(index) {
     const selected = selectItem(categories, state, index);
-    userPaused = true;
+    holdBriefly();
     if (selected.item === state.item) { updateMotion(); announce(); return; }
     const hadFocus = optionsHost.contains(doc.activeElement);
     state = selected;
@@ -335,9 +341,15 @@ export function setupRemarketing(root, categories, view = globalThis) {
     duration: ROTATION_MS,
   });
 
+  function holdBriefly() {
+    browsing = true;
+    view.clearTimeout?.(resumeTimer);
+    resumeTimer = view.setTimeout?.(() => { browsing = false; updateMotion(); }, RESUME_MS);
+    updateMotion();
+  }
   function updateMotion() {
     if (destroyed) return;
-    const running = !userPaused && !hover && !focused && inView && doc.visibilityState !== 'hidden' && hasMultipleMessages;
+    const running = !userPaused && !browsing && !hover && !focused && inView && doc.visibilityState !== 'hidden' && hasMultipleMessages;
     const wasRunning = root.dataset.rmRunning === 'true';
     root.dataset.rmRunning = String(running);
     root.dataset.rmUserPaused = String(userPaused);
@@ -373,13 +385,14 @@ export function setupRemarketing(root, categories, view = globalThis) {
   }
 
   listen(toggle, 'click', () => { userPaused = !userPaused; updateMotion(); });
-  const pauseForBrowsing = () => { userPaused = true; updateMotion(); };
+  const pauseForBrowsing = () => holdBriefly();
   listen(tabsHost, 'pointerdown', pauseForBrowsing);
   listen(optionsHost, 'pointerdown', pauseForBrowsing);
   listen(root, 'mouseleave', () => { hover = false; updateMotion(); });
-  listen(root, 'focusin', (event) => { focused = !toggle.contains(event.target); updateMotion(); });
+  // Chỉ dừng khi đi bằng bàn phím; chạm/bấm chuột đã có holdBriefly.
+  listen(root, 'focusin', (event) => { focused = !toggle.contains(event.target) && Boolean(event.target?.matches?.(':focus-visible')); updateMotion(); });
   listen(root, 'focusout', (event) => {
-    focused = root.contains(event.relatedTarget) && !toggle.contains(event.relatedTarget);
+    focused = root.contains(event.relatedTarget) && !toggle.contains(event.relatedTarget) && Boolean(event.relatedTarget?.matches?.(':focus-visible'));
     updateMotion();
   });
   listen(doc, 'visibilitychange', updateMotion);
@@ -403,6 +416,7 @@ export function setupRemarketing(root, categories, view = globalThis) {
   return {
     destroy() {
       destroyed = true;
+      view.clearTimeout?.(resumeTimer);
       timer.dispose();
       observer?.disconnect();
       cleanups.forEach((cleanup) => cleanup());

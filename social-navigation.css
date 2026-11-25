@@ -1,0 +1,2 @@
+/* Shared navigation: accommodate the Social Media Manager destination. */
+@media(min-width:901px) and (max-width:1250px){body .primary-nav{gap:15px}body .primary-nav .social-nav-link{max-width:135px;line-height:1.35}}

@@ -22,22 +22,22 @@ body :is(.button--coral,.header-cta):hover, body #main-content a.growth-primary:
 body .growth-mobile-actions .growth-primary:hover { background: var(--site-hover); }
 /* Saturated colour has one job: ownership, action and the selected data route. */
 @supports (background-clip:text) or (-webkit-background-clip:text) {
-  body #problems h1 > span:last-child {
+  body #customer-assets h1 > span:last-child {
     color: var(--site-accent-ink); background: var(--crm-ownership-wash);
     background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   }
 }
-body #problems .growth-question { background: var(--crm-rose-wash); }
-body #problems .monad-map { isolation: isolate; }
-body #problems .monad-map::before {
+body #customer-assets .growth-question { background: var(--crm-rose-wash); }
+body #customer-assets .monad-map { isolation: isolate; }
+body #customer-assets .monad-map::before {
   content: ''; position: absolute; z-index: -1; inset: 0 12%; pointer-events: none;
   background: var(--crm-signal-wash); border-radius: 48px;
 }
-body #problems :is(.monad-sources > span,.growth-loop-step) {
+body #customer-assets :is(.monad-sources > span,.growth-loop-step) {
   border: 1px solid var(--site-line); background: var(--site-white);
 }
-body #problems .monad-core-center { border: 1px solid var(--site-line); background: var(--site-white); }
-body #problems .monad-petal--right { background: var(--crm-rose-wash); }
+body #customer-assets .monad-core-center { border: 1px solid var(--site-line); background: var(--site-white); }
+body #customer-assets .monad-petal--right { background: var(--crm-rose-wash); }
 body #solution-ecosystem :is(.solution-hub,.solution-oneid) { background: var(--crm-rose-wash); }
 body #solution-ecosystem .solution-oneid { border: 1px solid var(--site-action); }
 body #solution-ecosystem .solution-window { border: 1px solid var(--site-line); }
@@ -100,11 +100,11 @@ body #contact { background: var(--crm-paper-wash); border-top: 1px solid var(--s
 body #contact .contact-links a { border: 1px solid var(--site-line); }
 /* Keep motion local to the active diagrams. Existing Pause controls own both layers. */
 @media (prefers-reduced-motion:no-preference) {
-  body #problems .monad-map::before,
+  body #customer-assets .monad-map::before,
   body #business-features .feature-core-field::after {
     animation: crm-signal-breathe 9s ease-in-out infinite alternate; animation-play-state: paused;
   }
-  body #problems .monad-pipeline[data-orbit-active='true'][data-hero-paused='false'] .monad-map::before,
+  body #customer-assets .monad-pipeline[data-orbit-active='true'][data-hero-paused='false'] .monad-map::before,
   body #business-features[data-motion='running'] .feature-core-field::after { animation-play-state: running; }
   @keyframes crm-signal-breathe {
     from { opacity: .55; transform: translateX(-2%) scale(.96); }
@@ -123,10 +123,10 @@ body #contact .contact-links a { border: 1px solid var(--site-line); }
 }
 @media (max-width:767px) {
   /* Compress diagram whitespace, not text size or touch targets. */
-  body #problems .monad-map { gap: 24px; }
-  body #problems .monad-map::before { inset: 160px 0 360px; border-radius: 32px; }
-  body #problems :is(.growth-loop-diagram,.growth-loop,.growth-loop-wiring) { height: 360px; }
-  body #problems .growth-loop-step:not(:last-child)::after { bottom: -20px; }
+  body #customer-assets .monad-map { gap: 24px; }
+  body #customer-assets .monad-map::before { inset: 160px 0 360px; border-radius: 32px; }
+  body #customer-assets :is(.growth-loop-diagram,.growth-loop,.growth-loop-wiring) { height: 360px; }
+  body #customer-assets .growth-loop-step:not(:last-child)::after { bottom: -20px; }
   body #solution-ecosystem .solution-window { padding: 20px; }
   body #solution-ecosystem .solution-art { margin-top: 4px; margin-bottom: 16px; }
   body #solution-ecosystem .solution-art--data { height: 186px; }

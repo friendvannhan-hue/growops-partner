@@ -1,0 +1,137 @@
+[
+  {
+    "id": "osen-comfort",
+    "file": "assets/osen-comfort.webp",
+    "width": 1352,
+    "height": 1644,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "254dab2dbdf6a6841560fbf415f8fefa4a06c140e2da809aff3442bf917e57f1",
+    "webSha256": "628a3141781fce08de8ee3746392f2ca0c268f757d1ea4c1b6e174bfb51181c9"
+  },
+  {
+    "id": "osen-new-chapter",
+    "file": "assets/osen-new-chapter.webp",
+    "width": 1366,
+    "height": 1318,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "226df01a653f9d7ec8aec958c09a3d1f2b8f3082432f01092a4c4d2047ca3f93",
+    "webSha256": "72a2351b1cc29590de48c38c66e276ba7fb91518cb9ba48c45c6dff7308fe3c2"
+  },
+  {
+    "id": "osen-bucket-list",
+    "file": "assets/osen-bucket-list.webp",
+    "width": 1350,
+    "height": 1438,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "e5c8680e0ed41b2db80d2a418e86d6150e551208c17ebee43e06d12b103b4081",
+    "webSha256": "56beddc647e610fc869ed9fd52880cf92fe958cfb76d17547c13faf9d77647cc"
+  },
+  {
+    "id": "osen-phu-quoc",
+    "file": "assets/osen-phu-quoc.webp",
+    "width": 1358,
+    "height": 1476,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "64dc517863c86800a89c767b891ac67452f0d07753ca2716ce45ac94346d5092",
+    "webSha256": "3758d0768376473514bd340d12c2826539b34204eb2c4f7389178a5d9649c4f7"
+  },
+  {
+    "id": "osen-family",
+    "file": "assets/osen-family.webp",
+    "width": 1362,
+    "height": 1364,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "b01c6f15843194f09623592c53ea4ece082d522f90cbdaf43798eb5dad16dd92",
+    "webSha256": "4dbd1ff7b65fa2820dd3c6664478a1214154cac2f9372218d218f76bee725992"
+  },
+  {
+    "id": "ls2-carbon",
+    "file": "assets/ls2-carbon.webp",
+    "width": 1364,
+    "height": 1320,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "4d9d6835f02741f0df969d1af57e6680ae43a8ccec3af471fd5f7fa6a0dadfc4",
+    "webSha256": "5301e07eab27387323f9098a8f6d8a46bd7303b979be6920f84ba032acc6ad8c"
+  },
+  {
+    "id": "ls2-store-campaign",
+    "file": "assets/ls2-store-campaign.webp",
+    "width": 1362,
+    "height": 1628,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "184b24bf5de6dc80fc097765529610e21dbe4558283aacbdb5a82d3f8a9d7e20",
+    "webSha256": "ab3c73f5d3ded9c221437dac5913e43ebb00ff5483d158aee39feba532537d79"
+  },
+  {
+    "id": "fashion-knit-palette",
+    "file": "assets/fashion-knit-palette.webp",
+    "width": 1536,
+    "height": 2048,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "3dae1d81c80874a4f884f313873a037272e2ef6d340be5e40aca8452d577a4a6",
+    "webSha256": "6d2f6f23f52cbc40a47d1279d45f5f7afba3126ae9ff421a4eace4390679feb2"
+  },
+  {
+    "id": "fashion-knit-editorial",
+    "file": "assets/fashion-knit-editorial.webp",
+    "width": 1536,
+    "height": 2048,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "9b123b338e1390770d7136bccc0089d988b83b7a6b37f80f0ae8b09e81c74003",
+    "webSha256": "5bbb9f6a6b11e9956c9b8f7ac8812648c19f484730321510aa0d4731c4633cf1"
+  },
+  {
+    "id": "fashion-black-dress",
+    "file": "assets/fashion-black-dress.webp",
+    "width": 1536,
+    "height": 2048,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "b065a1e1b47a46f64974973f45cc6b94af18db60fac013304a8306fbd5f117e8",
+    "webSha256": "4eac7ffda339188fd902fade521e6153fd48fb9eb60fd53be3aeede92e36d926"
+  },
+  {
+    "id": "fashion-outdoor",
+    "file": "assets/fashion-outdoor.webp",
+    "width": 1536,
+    "height": 2048,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "c26a87e97882bec24243060a2cf54dc371ae6758dac8dddd4b7cb52573948167",
+    "webSha256": "2ccdff5f0fdf3a658376c749c4ad708cb72cfc321c5fbc5a9c82665aceb764f1"
+  },
+  {
+    "id": "fashion-detail",
+    "file": "assets/fashion-detail.webp",
+    "width": 1536,
+    "height": 2048,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "07c42df3a038ed9b4c8665b69601f2e564669b583d99245e51e155ce598be9b1",
+    "webSha256": "e607d48aa074ebd44a93c7aef2843c33e21285986da57d7f379bfb3a8dcf9bca"
+  },
+  {
+    "id": "ls2-opening-ticket",
+    "file": "assets/ls2-opening-ticket.webp",
+    "width": 1122,
+    "height": 1402,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "5bf718a41764a1c7f41857e7138d113a2961c04c3ddb4ea85bfe860d9e37c841",
+    "webSha256": "47cd67322d597b4fbd21a2453d132372dcb39e9b0e798aa26c3e8c6428ec9f3e"
+  },
+  {
+    "id": "ls2-opening-store",
+    "file": "assets/ls2-opening-store.webp",
+    "width": 1122,
+    "height": 1402,
+    "source": "Owner-supplied design artwork, 27 October 2026",
+    "sourceSha256": "4ccf74ce819931964860d81036964a28efa13f9c5fe56ea1be7eed590c117c34",
+    "webSha256": "78486c9a53866d22ec58218e843b82beadb376c3d9c558d05c5fb04c45298e02"
+  },
+  {
+    "id": "osen-spa",
+    "file": "assets/osen-spa.webp",
+    "width": 1088,
+    "height": 1512,
+    "source": "Owner-supplied Osen Spa reference",
+    "sourceSha256": "abd82f4ec7cf6b7fde405d7df645e53addeb8962208d26f6fdae6cda309722d1",
+    "webSha256": "bde42f9df5e78197198a49c1d828f83ae93f2d27c51110026cc627dd5450149f"
+  }
+]

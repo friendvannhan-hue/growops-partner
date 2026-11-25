@@ -38,7 +38,7 @@ body :focus-visible { outline: 3px solid var(--site-accent-ink); outline-offset:
 body :is(.section-shell,.header-shell) { width: var(--shell); }
 body main > section { padding-block: var(--site-space) !important; }
 body main > section:first-child { padding-top: 72px !important; }
-body :is(#problems,#solution-ecosystem,#experience,#cost-pressure,#why-growops,#growth-operations,#comparison,#business-features,#operating-trio,#tools,#capabilities,#case-studies) {
+body :is(#customer-assets,#solution-ecosystem,#experience,#cost-pressure,#why-growops,#growth-operations,#comparison,#business-features,#operating-trio,#tools,#capabilities,#case-studies) {
   color: var(--site-ink);
   --monad-paper: var(--site-white); --monad-ink: var(--site-ink); --monad-muted: var(--site-muted); --monad-line: var(--site-line); --monad-white: var(--site-white);
   --monad-mint: var(--site-field); --monad-pink: var(--site-field-strong); --monad-yellow: var(--site-field); --monad-accent: var(--site-accent-ink);
@@ -51,9 +51,9 @@ body :is(#problems,#solution-ecosystem,#experience,#cost-pressure,#why-growops,#
   --proof-surface: var(--site-field); --proof-tile: var(--site-white); --solution-paper: var(--site-field); --solution-wire: var(--site-line); --solution-muted: var(--site-muted);
   --feature-canvas: var(--site-field); --feature-core: var(--site-field-strong); --feature-activation: var(--site-field-strong); --feature-pink: var(--site-action); --feature-green: var(--site-action); --feature-wire: var(--site-line);
 }
-body :is(#problems,#experience,#why-growops,#business-features,#tools,#capabilities,#case-studies) { background: var(--site-white); }
+body :is(#customer-assets,#experience,#why-growops,#business-features,#tools,#capabilities,#case-studies) { background: var(--site-white); }
 body :is(#solution-ecosystem,#cost-pressure,#growth-operations,#comparison,#operating-trio) { background: var(--site-field); }
-body :is(#problems,#solution-ecosystem,#experience,#cost-pressure,#why-growops,#growth-operations,#comparison,#business-features,#operating-trio,#tools,#capabilities,#case-studies,#contact) h2 {
+body :is(#customer-assets,#solution-ecosystem,#experience,#cost-pressure,#why-growops,#growth-operations,#comparison,#business-features,#operating-trio,#tools,#capabilities,#case-studies,#contact) h2 {
   max-width: none; color: var(--site-ink); font-family: var(--site-font); font-size: var(--site-title); font-weight: 700; line-height: 1.14; letter-spacing: -.04em;
 }
 body h2 :is(span,em) { color: inherit; font-family: inherit; font-style: normal; -webkit-text-fill-color: currentColor; background: none; }
@@ -81,6 +81,7 @@ body .scroll-progress i { background: var(--site-action); }
 body .growth-hero h1 { color: var(--site-ink); font-family: var(--site-font); font-size: var(--site-display); font-weight: 750; line-height: 1.08; letter-spacing: -.045em; text-align: left; }
 body .growth-hero h1 > span { display: block; }
 body .growth-hero h1 > span:last-child { color: var(--site-accent-ink); }
+body .growth-hero .growth-tagline { margin: 16px 0 0; font-size: clamp(20px, 2vw, 28px); line-height: 1.4; font-weight: 600; letter-spacing: -.02em; }
 body .growth-hero-bottom { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 64px; margin-top: 36px; align-items: start; }
 .hero-positioning { margin: 0; color: var(--site-accent-ink); font-size: var(--site-lead); font-weight: 600; }
 body .growth-hero .growth-sub { grid-column: 1; margin: 0; max-width: 58ch; text-align: left; color: var(--site-ink); font-size: var(--site-lead); }
@@ -95,15 +96,15 @@ body .growth-cycle { margin-top: 64px; }
 body .monad-pipeline > figcaption { text-align: left; font-family: var(--site-font); font-size: var(--site-lead); color: var(--site-ink); }
 body .monad-sources > span, body .growth-loop-step { border: 0; background: var(--site-field); font-size: var(--site-note); }
 body .monad-core-center { border-color: var(--site-line); background: var(--site-white); }
-body #problems .monad-core-center { border: 0; }
+body #customer-assets .monad-core-center { border: 0; }
 body .monad-core-center strong { font-weight: 650; font-size: var(--site-card); }
 body .monad-core-center small, body .monad-core-center span, body .monad-petal span { font-size: var(--site-note); }
 body .growth-question { margin-top: 40px; padding: 24px; border-radius: var(--site-radius); background: var(--site-field); }
 body .growth-question-label { color: var(--site-muted); font-size: var(--site-note); }
 body .growth-question p:last-child { color: var(--site-ink); font-size: var(--site-lead); }
 body .growth-service { background: var(--site-field); border: 0; color: var(--site-ink); font-size: var(--site-body); }
-body #problems .growth-service { border: 0; background: var(--site-field); font-size: var(--site-body); }
-body #problems .growth-loop-step { border: 0; }
+body #customer-assets .growth-service { border: 0; background: var(--site-field); font-size: var(--site-body); }
+body #customer-assets .growth-loop-step { border: 0; }
 body button.growth-service:hover, body button.growth-service[aria-expanded='true'] { background: var(--site-action); color: var(--site-ink); }
 /* Diagram surfaces are blue fields; their connecting lines remain meaningful. */
 body #solution-ecosystem .solution-window { background: var(--site-white); border-radius: var(--site-radius); }

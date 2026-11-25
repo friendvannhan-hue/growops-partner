@@ -52,5 +52,23 @@
     "asset": "client-fide.jpg",
     "source": "https://theme.hstatic.net/200000863757/1001217634/14/logo.png?v=290",
     "bytes": 29055
+  },
+  {
+    "brand": "Logo Lốp Quốc Dân",
+    "asset": "client-lop-quoc-dan.png",
+    "source": "https://lopquocdan.vn/assets/images/site/logo.png",
+    "bytes": 102756
+  },
+  {
+    "brand": "Logo Pantio",
+    "asset": "client-pantio.png",
+    "source": "https://theme.hstatic.net/1000392326/1000686717/14/logo.png?v=8198",
+    "bytes": 3251
+  },
+  {
+    "brand": "Logo AB Beauty World",
+    "asset": "client-ab-beauty-world.png",
+    "source": "https://theme.hstatic.net/200000117693/1001380493/14/logo.png?v=1365",
+    "bytes": 47393
   }
 ]

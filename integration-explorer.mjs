@@ -1,3 +1,12 @@
+export function integrationKeyIndex(key, index, length) {
+  if (!Number.isInteger(length) || length < 1 || !Number.isInteger(index) || index < 0 || index >= length) return null;
+  if (key === 'ArrowDown' || key === 'ArrowRight') return (index + 1) % length;
+  if (key === 'ArrowUp' || key === 'ArrowLeft') return (index - 1 + length) % length;
+  if (key === 'Home') return 0;
+  if (key === 'End') return length - 1;
+  return null;
+}
+
 export function setupIntegrationExplorer(root = document) {
   const host = root.querySelector('.integration-browser');
   const picker = host?.querySelector('.integration-picker');
@@ -16,7 +25,13 @@ export function setupIntegrationExplorer(root = document) {
       const active = button.dataset.integrationSelect === key;
       button.setAttribute('aria-selected', String(active));
       button.tabIndex = active ? 0 : -1;
-      if (active && focus) button.focus();
+      if (active && focus) button.focus({preventScroll: true});
+      if (active && picker.scrollWidth > picker.clientWidth) {
+        const bounds = picker.getBoundingClientRect();
+        const selected = button.getBoundingClientRect();
+        if (selected.left < bounds.left) picker.scrollLeft += selected.left - bounds.left;
+        else if (selected.right > bounds.right) picker.scrollLeft += selected.right - bounds.right;
+      }
     });
     panels.forEach(panel => {
       const active = panel.dataset.integrationPanel === key;
@@ -30,9 +45,7 @@ export function setupIntegrationExplorer(root = document) {
     button.setAttribute('role', 'tab');
     button.addEventListener('click', () => select(key));
     button.addEventListener('keydown', event => {
-      const next = event.key === 'ArrowDown' ? (index + 1) % buttons.length
-        : event.key === 'ArrowUp' ? (index - 1 + buttons.length) % buttons.length
-        : event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 : null;
+      const next = integrationKeyIndex(event.key, index, buttons.length);
       if (next === null) return;
       event.preventDefault();
       select(keys[next], true);
@@ -45,6 +58,10 @@ export function setupIntegrationExplorer(root = document) {
     panel.tabIndex = 0;
   });
   select(keys[0]);
+  const mobile = host.ownerDocument.defaultView?.matchMedia('(max-width: 767px)');
+  const syncOrientation = () => picker.setAttribute('aria-orientation', mobile?.matches ? 'horizontal' : 'vertical');
+  mobile?.addEventListener('change', syncOrientation);
+  syncOrientation();
   picker.hidden = false;
   host.dataset.integrationReady = 'true';
 }

@@ -34,25 +34,25 @@
 }
 
 /* A stronger hierarchy, without turning paragraphs into headings. */
-body #problems h1 { font-weight: 750; }
+body #customer-assets h1 { font-weight: 750; }
 body #main-content h2, body #contact h2 { font-weight: var(--site-heading-weight); }
 body #main-content :is(.solution-window,.flow-goal,.feature-panel,.capability-node,.tool-family) h3,
 body #growth-operations :is(.method-cycle,.plugin-manifesto-title) h3,
 body #operating-trio .trio-step-heading h3,
 body #case-studies :is(.oa-growth-intro h3,.oa-brand-name,.website-showcase-heading h3,.website-detail h4),
 body #tools :is(.integration-heading h3,.integration-card h4) { font-weight: 700; }
-body .primary-nav a, body #problems .hero-positioning { font-weight: 600; }
-body #problems :is(.ownership-claim,.growth-question p:last-child) { font-weight: 650; }
+body .primary-nav a, body #customer-assets .hero-positioning { font-weight: 600; }
+body #customer-assets :is(.ownership-claim,.growth-question p:last-child) { font-weight: 650; }
 body #cost-pressure :is(.cost-platform-estimate > strong,.private-domain-feature h3),
 body #case-studies .oa-followers strong, body #comparison .flow-compare-value { font-weight: 700; }
 body .site-header { border-bottom-color: var(--site-line); }
 body .growth-primary, body .header-cta { font-weight: 650; }
-body #problems .growth-question { border: 1px solid var(--site-line); background: var(--site-field); }
-body #problems .growth-question p:last-child strong { text-decoration: underline; text-decoration-color: var(--site-action); text-underline-offset: .16em; }
-body #problems .growth-services .growth-service { border: 1px solid var(--site-line); font-weight: 550; }
+body #customer-assets .growth-question { border: 1px solid var(--site-line); background: var(--site-field); }
+body #customer-assets .growth-question p:last-child strong { text-decoration: underline; text-decoration-color: var(--site-action); text-underline-offset: .16em; }
+body #customer-assets .growth-services .growth-service { border: 1px solid var(--site-line); font-weight: 550; }
 
 /* The two requested diagrams now use a bright pearl canvas. Dark modules elsewhere stay intact. */
-body #problems .growth-cycle, body #business-features .feature-pipeline {
+body #customer-assets .growth-cycle, body #business-features .feature-pipeline {
   --cdp-canvas: #fcfcff;
   --cdp-surface: #ffffff;
   --cdp-surface-high: #eff1fc;
@@ -65,36 +65,36 @@ body #problems .growth-cycle, body #business-features .feature-pipeline {
   --cdp-activation: #fff5fa;
 }
 /* Preserve source → OneID → relationship geometry and its existing motion controls. */
-body #problems .growth-cycle {
+body #customer-assets .growth-cycle {
   --monad-line: var(--cdp-wire);
   --monad-accent: var(--cdp-signal);
   padding: 28px 24px 20px; border: 1px solid var(--cdp-line); border-radius: var(--cdp-radius);
   color: var(--cdp-text); background: var(--pearl-canvas);
 }
-body #problems .growth-cycle > figcaption { color: var(--cdp-text); font-weight: 550; }
-body #problems .monad-map::before { inset: 0 12%; border-radius: 0; background: none; animation: none; }
-body #problems .monad-wires path { stroke: var(--cdp-wire); stroke-width: 2; }
-body #problems .monad-wires .monad-signal { stroke: var(--cdp-signal); stroke-width: 3.5; opacity: 1; }
-body #problems :is(.monad-sources > span,.growth-loop-step) {
+body #customer-assets .growth-cycle > figcaption { color: var(--cdp-text); font-weight: 550; }
+body #customer-assets .monad-map::before { inset: 0 12%; border-radius: 0; background: none; animation: none; }
+body #customer-assets .monad-wires path { stroke: var(--cdp-wire); stroke-width: 2; }
+body #customer-assets .monad-wires .monad-signal { stroke: var(--cdp-signal); stroke-width: 3.5; opacity: 1; }
+body #customer-assets :is(.monad-sources > span,.growth-loop-step) {
   color: var(--cdp-text); background: var(--cdp-surface); border: 1px solid var(--cdp-line);
 }
-body #problems .monad-sources > span { font-weight: 500; }
-body #problems .growth-loop-step strong { color: var(--cdp-text); font-weight: 600; }
-body #problems .growth-loop-dot { background: var(--cdp-signal); }
-body #problems .growth-loop-step:not(:last-child)::after { color: var(--cdp-muted); }
-body #problems .growth-loop-wiring path { stroke: var(--cdp-signal); stroke-width: 2.5; }
-body #problems .monad-petal { border: 1px solid var(--cdp-line); background: var(--cdp-surface); }
-body #problems .monad-petal--right { background: var(--cdp-activation); border-color: var(--cdp-signal); }
-body #problems .monad-petal span { color: var(--cdp-text); font-weight: 550; }
-body #problems .monad-core-center { inset: 80px; border: 1px solid var(--cdp-signal); border-radius: 24px; background: var(--cdp-core); transform: none; }
-body #problems .monad-core-center > div { width: 144px; transform: none; }
-body #problems .monad-core-center :is(span,strong,small) { color: var(--site-ink); }
-body #problems .monad-core-center strong { font-weight: 750; }
-body #problems .monad-core-center small { font-weight: 600; }
-body #problems .growth-return-label { color: var(--cdp-muted); }
-body #problems .monad-motion-toggle { color: var(--cdp-muted); }
-body #problems .monad-motion-toggle:hover { color: var(--cdp-text); }
-body #problems .growth-cycle :focus-visible { outline-color: var(--cdp-signal); }
+body #customer-assets .monad-sources > span { font-weight: 500; }
+body #customer-assets .growth-loop-step strong { color: var(--cdp-text); font-weight: 600; }
+body #customer-assets .growth-loop-dot { background: var(--cdp-signal); }
+body #customer-assets .growth-loop-step:not(:last-child)::after { color: var(--cdp-muted); }
+body #customer-assets .growth-loop-wiring path { stroke: var(--cdp-signal); stroke-width: 2.5; }
+body #customer-assets .monad-petal { border: 1px solid var(--cdp-line); background: var(--cdp-surface); }
+body #customer-assets .monad-petal--right { background: var(--cdp-activation); border-color: var(--cdp-signal); }
+body #customer-assets .monad-petal span { color: var(--cdp-text); font-weight: 550; }
+body #customer-assets .monad-core-center { inset: 80px; border: 1px solid var(--cdp-signal); border-radius: 24px; background: var(--cdp-core); transform: none; }
+body #customer-assets .monad-core-center > div { width: 144px; transform: none; }
+body #customer-assets .monad-core-center :is(span,strong,small) { color: var(--site-ink); }
+body #customer-assets .monad-core-center strong { font-weight: 750; }
+body #customer-assets .monad-core-center small { font-weight: 600; }
+body #customer-assets .growth-return-label { color: var(--cdp-muted); }
+body #customer-assets .monad-motion-toggle { color: var(--cdp-muted); }
+body #customer-assets .monad-motion-toggle:hover { color: var(--cdp-text); }
+body #customer-assets .growth-cycle :focus-visible { outline-color: var(--cdp-signal); }
 
 /* Give every illustration the same vocabulary: a framed surface and a decisive core. */
 body #solution-ecosystem .solution-hub { color: var(--cdp-text); background: var(--cdp-canvas); border: 1px solid var(--cdp-line); }
@@ -216,12 +216,12 @@ body .footer-wordmark { color: var(--site-ink); font-weight: 750; }
 
 /* Keep the approved mobile reflow: natural-height stage groups and compact trio. */
 @media (max-width:767px) {
-  body #problems .growth-cycle { padding: 24px 16px 16px; }
-  body #problems .monad-map { gap: 24px; }
-  body #problems .monad-map::before { inset: 0; }
-  body #problems .monad-core::before, body #problems .monad-core::after { color: var(--cdp-signal); }
-  body #problems .monad-petal span, body #problems .monad-core-center :is(span,small) { font-size: 16px; }
-  body #problems .monad-sources > span { padding-inline: 8px; }
+  body #customer-assets .growth-cycle { padding: 24px 16px 16px; }
+  body #customer-assets .monad-map { gap: 24px; }
+  body #customer-assets .monad-map::before { inset: 0; }
+  body #customer-assets .monad-core::before, body #customer-assets .monad-core::after { color: var(--cdp-signal); }
+  body #customer-assets .monad-petal span, body #customer-assets .monad-core-center :is(span,small) { font-size: 16px; }
+  body #customer-assets .monad-sources > span { padding-inline: 8px; }
   body #business-features .feature-stage { color: var(--cdp-text); }
   body #business-features .feature-stage-group:not(:last-child)::before { background: var(--cdp-wire); }
   body #business-features .feature-stage-group:not(:last-child)::after { background: var(--cdp-signal); }
@@ -235,6 +235,47 @@ body .footer-wordmark { color: var(--site-ink); font-weight: 750; }
   body #operating-trio .trio-step-heading h3 { font-weight: 700; }
 }
 @media (max-width:360px) {
-  body #problems .monad-core { transform: scale(.75); }
-  body #problems .monad-petal span, body #problems .monad-core-center :is(span,small) { font-size: 19px; }
+  body #customer-assets .monad-core { transform: scale(.75); }
+  body #customer-assets .monad-petal span, body #customer-assets .monad-core-center :is(span,small) { font-size: 19px; }
+}
+
+/* Local review: emphasize lasting relationships and their nurturing activities. */
+body #customer-assets .growth-cycle > figcaption {
+  max-width: 32ch; margin-inline: auto; text-align: center;
+  font-size: clamp(24px, 3vw, 38px); font-weight: 700; line-height: 1.25;
+  letter-spacing: -.025em; text-wrap: balance;
+}
+body #customer-assets .growth-cycle > figcaption strong { color: var(--site-accent-ink); font-weight: inherit; }
+body #customer-assets .monad-petal--bottom { background: var(--cdp-core); border: 2px solid var(--cdp-signal); }
+body #customer-assets .monad-petal--bottom span { color: var(--site-accent-ink); font-weight: 750; }
+body #customer-assets .nurture-focus {
+  display: grid; grid-template-columns: minmax(220px, .8fr) minmax(0, 1.6fr);
+  align-items: center; gap: 24px; margin: 24px 0; padding: 24px 28px;
+  border-radius: 20px; color: var(--site-white); background: var(--site-ink);
+}
+body #customer-assets .nurture-focus-eyebrow { margin: 0 0 6px; color: var(--site-action); font-size: 14px; line-height: 1.5; }
+body #customer-assets #nurture-focus-title { margin: 0; color: var(--site-white); font-size: 28px; font-weight: 700; line-height: 1.25; }
+body #customer-assets .nurture-focus-keys { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+body #customer-assets .nurture-focus-keys li { padding: 8px 12px; border-radius: 10px; background: rgb(255 255 255 / .09); font-size: 15px; line-height: 1.4; }
+body #customer-assets .nurture-focus-keys li:first-child { color: var(--site-action); font-weight: 650; }
+
+/* One question, with a clear distinction between customer ownership and advantage. */
+body #customer-assets .growth-question {
+  grid-template-columns: minmax(150px, .65fr) minmax(0, 2.6fr); gap: 36px;
+  padding: clamp(24px, 3vw, 40px); border: 1px solid var(--cdp-line);
+  border-inline-start: 4px solid var(--site-action); border-radius: 24px;
+  background: var(--crm-rose-wash);
+}
+body #customer-assets .growth-question .growth-question-label { max-width: 15ch; margin: 4px 0 0; padding: 0; font-size: 15px; font-weight: 650; line-height: 1.6; }
+body #customer-assets #growth-question-title { max-width: 42ch; margin: 0; font-size: clamp(24px, 2.5vw, 34px); font-weight: 600; line-height: 1.35; letter-spacing: -.025em; text-wrap: balance; }
+body #customer-assets #growth-question-title strong { color: var(--site-accent-ink); font-weight: 700; }
+body #customer-assets .growth-question-main { display: block; }
+body #customer-assets .growth-question-continuation { display: block; margin-top: 20px; color: var(--site-muted); font-size: clamp(20px, 2vw, 26px); font-weight: 500; line-height: 1.45; letter-spacing: -.015em; }
+@media (max-width:767px) {
+  body #customer-assets .nurture-focus { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 20px; margin-block: 20px; }
+  body #customer-assets #nurture-focus-title { font-size: 26px; }
+  body #customer-assets .nurture-focus-keys li { padding: 7px 10px; font-size: 14px; }
+  body #customer-assets .growth-question { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 24px 20px; }
+  body #customer-assets .growth-question .growth-question-label { max-width: none; font-size: 14px; }
+  body #customer-assets .growth-question-continuation { margin-top: 16px; }
 }

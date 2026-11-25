@@ -1,14 +1,14 @@
 /* Content polish requested on 16 October: preserve the established form and shared brand tokens. */
 body :is(#solution-ecosystem,#experience,#business-features,#tools,#case-studies) .content-heading-solo { display: block; }
-body #problems .growth-sub { max-width: 60ch; }
-body #problems .ownership-lead, body #problems .ownership-tail { display: block; }
-body #problems .ownership-lead { margin-bottom: 10px; }
-body #problems .ownership-claim { display: inline; color: var(--site-accent-ink); font-size: 30px; font-weight: 650; line-height: 1.35; letter-spacing: -.025em; text-decoration: underline; text-decoration-color: var(--site-action); text-decoration-thickness: .12em; text-underline-offset: .12em; text-decoration-skip-ink: none; }
-body #problems .ownership-tail { margin-top: 12px; font-size: var(--site-body); color: var(--site-muted); }
-body #problems .growth-question { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,2.6fr); align-items: start; gap: 32px; max-width: none; margin: 40px 0 0; padding: 32px; background: var(--site-field-strong); text-align: left; }
-body #problems .growth-question .growth-question-label { margin: 2px 0 0; color: var(--site-accent-ink); font: 600 var(--site-body)/1.5 var(--site-font); }
-body #problems .growth-question p:last-child { max-width: 44ch; margin: 0; color: var(--site-ink); font: 600 32px/1.3 var(--site-font); letter-spacing: -.035em; }
-body #problems .growth-question p:last-child strong { color: var(--site-accent-ink); font-weight: 650; }
+body #customer-assets .growth-sub { max-width: 60ch; }
+body #customer-assets .ownership-lead, body #customer-assets .ownership-tail { display: block; }
+body #customer-assets .ownership-lead { margin-bottom: 10px; }
+body #customer-assets .ownership-claim { display: inline; color: var(--site-accent-ink); font-size: 30px; font-weight: 650; line-height: 1.35; letter-spacing: -.025em; text-decoration: underline; text-decoration-color: var(--site-action); text-decoration-thickness: .12em; text-underline-offset: .12em; text-decoration-skip-ink: none; }
+body #customer-assets .ownership-tail { margin-top: 12px; font-size: var(--site-body); color: var(--site-muted); }
+body #customer-assets .growth-question { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,2.6fr); align-items: start; gap: 32px; max-width: none; margin: 40px 0 0; padding: 32px; background: var(--site-field-strong); text-align: left; }
+body #customer-assets .growth-question .growth-question-label { margin: 2px 0 0; color: var(--site-accent-ink); font: 600 var(--site-body)/1.5 var(--site-font); }
+body #customer-assets .growth-question p:last-child { max-width: 44ch; margin: 0; color: var(--site-ink); font: 600 32px/1.3 var(--site-font); letter-spacing: -.035em; }
+body #customer-assets .growth-question p:last-child strong { color: var(--site-accent-ink); font-weight: 650; }
 body #experience .experience-copy { margin-bottom: 40px; }
 body #experience .experience-copy h2 { max-width: 1000px; }
 body #experience .experience-copy h2 > span { display: block; }
@@ -50,7 +50,7 @@ body #case-studies .oa-growth-intro h3 { margin: 0; font-size: 32px; line-height
 body #case-studies .oa-intro-copy p:first-child { margin: 0; color: var(--site-muted); font: 400 var(--site-body)/1.6 var(--site-font); }
 body #case-studies :is(.oa-media-credits,.website-media-credits)[hidden] { display: none; }
 @media (prefers-reduced-motion:no-preference) {
-  body #problems .growth-sub.growth-in-view .ownership-claim { animation: ownership-ink 700ms 250ms ease-out both; }
+  body #customer-assets .growth-sub.growth-in-view .ownership-claim { animation: ownership-ink 700ms 250ms ease-out both; }
   body #cost-pressure .private-domain-feature h3.growth-in-view span::after { animation: content-mark 700ms 200ms ease-out both; }
   @keyframes content-mark { from { transform: scaleX(0); } to { transform: scaleX(1); } }
   @keyframes ownership-ink { from { opacity: .15; } to { opacity: 1; } }
@@ -65,9 +65,9 @@ body #case-studies :is(.oa-media-credits,.website-media-credits)[hidden] { displ
   body #growth-operations .plugin-manifesto-title h3 { font-size: 28px; }
 }
 @media (max-width:767px) {
-  body #problems .ownership-claim { font-size: 26px; }
-  body #problems .growth-question { grid-template-columns: 1fr; gap: 16px; padding: 24px; }
-  body #problems .growth-question p:last-child { font-size: 24px; }
+  body #customer-assets .ownership-claim { font-size: 26px; }
+  body #customer-assets .growth-question { grid-template-columns: 1fr; gap: 16px; padding: 24px; }
+  body #customer-assets .growth-question p:last-child { font-size: 24px; }
   body #experience .experience-copy { margin-bottom: 28px; }
   body #cost-pressure .private-domain-feature { grid-template-columns: 1fr; gap: 28px; padding: 24px; }
   body #cost-pressure .private-kicker { margin-bottom: 20px; }

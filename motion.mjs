@@ -63,6 +63,12 @@ if (typeof document !== 'undefined' && typeof IntersectionObserver === 'function
         once.unobserve(e.target);
       });
     }, { rootMargin: '0px 0px -8% 0px' });
+    // Danh sách gắn data-stagger: từng thẻ con trồi lên lần lượt khi cuộn tới.
+    document.querySelectorAll('[data-stagger]').forEach(list => [...list.children].forEach((el, i) => {
+      el.classList.add('go-rise');
+      el.style.setProperty('--d', String(i + 1));
+      targets.push(el);
+    }));
     targets.forEach(el => {
       // Đã nằm trên màn hình lúc tải (vd. mở bằng #neo) thì hiện ngay, không bắt chờ.
       if (el.getBoundingClientRect().top < innerHeight * 0.9) el.classList.add('is-in');

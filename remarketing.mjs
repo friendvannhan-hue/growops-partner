@@ -75,6 +75,8 @@ export function setupRemarketing(root, categories, view = globalThis) {
   const count = root.querySelector('[data-rm-count]');
   const status = root.querySelector('[data-rm-status]');
   const mobileSummary = root.querySelector('[data-rm-mobile-summary]');
+  const mobileRule = root.querySelector('[data-rm-mobile-rule]');
+  const ruleNote = (text) => { const note = element('p', 'rm-option-rule'); note.append(element('b', '', 'Luật gửi (minh họa)'), document.createTextNode(text)); return note; };
   if (!tabsHost || !stage || !optionsHost || !toggle || categories.some((category) => !category.id || !category.items?.length)) return null;
 
   const media = typeof view.matchMedia === 'function' ? view.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
@@ -294,6 +296,7 @@ export function setupRemarketing(root, categories, view = globalThis) {
       detail.hidden = !active;
       button.setAttribute('aria-controls', detail.id);
       detail.append(element('p', '', item.description));
+      if (item.rule) detail.append(ruleNote(item.rule));
       const tag = element('span', 'rm-option-tag', item.tag || current().label);
       detail.append(tag);
       button.addEventListener('click', () => chooseItem(index));
@@ -374,6 +377,10 @@ export function setupRemarketing(root, categories, view = globalThis) {
     if (kicker) kicker.textContent = current().kicker || '';
     if (description) description.textContent = current().description || '';
     if (mobileSummary) mobileSummary.textContent = currentItem().description || '';
+    if (mobileRule) {
+      mobileRule.replaceChildren(...(currentItem().rule ? ruleNote(currentItem().rule).childNodes : []));
+      mobileRule.style.animation = 'none'; void mobileRule.offsetWidth; mobileRule.style.animation = '';
+    }
     if (count) count.textContent = `${padded(state.item + 1)} / ${padded(current().items.length)}`;
     root.dataset.rmCategory = current().id;
     root.dataset.rmItem = currentItem().id;

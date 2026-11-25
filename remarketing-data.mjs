@@ -8,6 +8,7 @@ export const categories = [
     "items": [
       {
         "id": "ls2-welcome",
+        "rule": "Ngay khi khách quan tâm OA lần đầu. Chưa dùng quyền lợi thì nhắc một lần trước khi hết hạn.",
         "brand": "LS2 Store VN",
         "title": "Quyền lợi cho lần mua đầu",
         "description": "Ưu đãi chào mừng, quyền lợi vận chuyển và dịch vụ đi cùng sản phẩm trong một mẫu tin.",
@@ -29,6 +30,7 @@ export const categories = [
       },
       {
         "id": "onici-welcome",
+        "rule": "Khách vừa quan tâm OA nhưng chưa có đơn nào. Gửi một lần, kèm gợi ý sản phẩm bán chạy.",
         "brand": "ONICI",
         "title": "Lời chào có lý do để quay lại",
         "description": "Biến một lượt quan tâm thành cơ hội giới thiệu sản phẩm và dẫn khách về kênh sở hữu.",
@@ -50,6 +52,7 @@ export const categories = [
       },
       {
         "id": "osen-before-stay",
+        "rule": "Khách có lịch đặt phòng sắp tới. Gửi trước ngày nhận phòng, kèm hướng dẫn và gợi ý trải nghiệm.",
         "brand": "Osen Hotel",
         "title": "Chăm sóc từ trước ngày nhận phòng",
         "description": "Gửi thông tin lưu trú và gợi ý trải nghiệm đúng lúc khách chuẩn bị cho chuyến đi.",
@@ -79,6 +82,7 @@ export const categories = [
     "items": [
       {
         "id": "ls2-opening",
+        "rule": "Khách từng mua hoặc đang ở gần cửa hàng mới. Gửi trước ngày khai trương.",
         "brand": "LS2 Store VN",
         "title": "Khai trương, tiếp cận lại khách quanh cửa hàng",
         "description": "Thông báo điểm bán mới kèm quyền lợi rõ ràng để khách cũ có thêm lý do ghé thăm.",
@@ -100,6 +104,7 @@ export const categories = [
       },
       {
         "id": "taidat-voucher",
+        "rule": "Khách vừa để lại đánh giá. Gửi lời cảm ơn kèm voucher cho lần mua tiếp.",
         "brand": "Tài Đạt",
         "title": "Từ một đánh giá đến lần mua tiếp theo",
         "description": "Cảm ơn khách đã chia sẻ trải nghiệm và gửi voucher để nối tiếp quan hệ sau mua.",
@@ -121,6 +126,7 @@ export const categories = [
       },
       {
         "id": "maria-cart",
+        "rule": "Khách thêm vào giỏ trên website nhưng chưa thanh toán. Nhắc một lần trong ngày.",
         "brand": "MARIA Family",
         "title": "Gợi nhớ một lựa chọn còn dang dở",
         "description": "Tiếp nối nhu cầu đã có thay vì gửi cùng một thông điệp khuyến mãi cho mọi người.",
@@ -142,6 +148,7 @@ export const categories = [
       },
       {
         "id": "fide-restock",
+        "rule": "Khách từng xem sản phẩm đang hết hàng. Gửi ngay khi sản phẩm có lại.",
         "brand": "FIDÉ",
         "title": "Sản phẩm yêu thích đã có trở lại",
         "description": "Gửi thông tin theo mối quan tâm trước đó để thông điệp có liên quan với từng khách.",
@@ -171,6 +178,7 @@ export const categories = [
     "items": [
       {
         "id": "ls2-order",
+        "rule": "Ngay khi đơn được tạo trên phần mềm bán hàng. Cập nhật tiếp khi đơn được giao đi.",
         "brand": "LS2 Store VN",
         "title": "Xác nhận đơn, giữ khách an tâm",
         "description": "Cập nhật trạng thái đơn hàng và mở sẵn một kênh hỗ trợ khi khách cần điều chỉnh.",
@@ -192,6 +200,7 @@ export const categories = [
       },
       {
         "id": "cellphones-care",
+        "rule": "Theo mốc sử dụng của sản phẩm đã mua, ví dụ gần hết hạn bảo hành.",
         "brand": "CellphoneS",
         "title": "Chăm sóc đúng vòng đời sản phẩm",
         "description": "Gợi nhớ nhu cầu kiểm tra, vệ sinh thiết bị dựa trên sản phẩm khách đã sử dụng.",
@@ -213,6 +222,7 @@ export const categories = [
       },
       {
         "id": "tyres-care",
+        "rule": "Đến mốc bảo dưỡng tính từ ngày mua.",
         "brand": "Lốp Quốc Dân",
         "title": "Nhắc bảo dưỡng, nối dài trải nghiệm",
         "description": "Gợi nhắc lịch chăm sóc xe và dẫn khách tới quyền lợi thành viên trên Mini App.",
@@ -234,6 +244,7 @@ export const categories = [
       },
       {
         "id": "fide-feedback",
+        "rule": "Khi đơn chuyển sang trạng thái đã giao.",
         "brand": "FIDÉ",
         "title": "Lắng nghe sau khi nhận hàng",
         "description": "Xin phản hồi ở thời điểm phù hợp để có cơ sở chăm sóc và cải thiện trải nghiệm.",
@@ -263,6 +274,7 @@ export const categories = [
     "items": [
       {
         "id": "ls2-thanks",
+        "rule": "Khách lên hạng thành viên hoặc mua lặp lại.",
         "brand": "LS2 Store VN",
         "title": "Tri ân bằng một quyền lợi cụ thể",
         "description": "Kết nối phản hồi sau mua với quyền lợi cho lần ghé tiếp theo.",
@@ -284,6 +296,7 @@ export const categories = [
       },
       {
         "id": "lotus-birthday",
+        "rule": "Đầu tháng sinh nhật của thành viên, lấy từ hồ sơ khách.",
         "brand": "Lotus Group",
         "title": "Một lời chúc dành riêng cho thành viên",
         "description": "Một điểm chạm theo dịp giúp thương hiệu ghi nhận mối quan hệ, thay vì chỉ nhắc tới bán hàng.",
@@ -305,6 +318,7 @@ export const categories = [
       },
       {
         "id": "vanhanh-points",
+        "rule": "Sau mỗi lần tích điểm, kèm số điểm hiện có.",
         "brand": "Vạn Hạnh Mall",
         "title": "Tích điểm có câu chuyện tiếp nối",
         "description": "Giúp khách theo dõi quyền lợi và khám phá các lựa chọn đổi quà trên kênh sở hữu.",
@@ -326,6 +340,7 @@ export const categories = [
       },
       {
         "id": "hungvuong-member",
+        "rule": "Có sự kiện hoặc sản phẩm mới. Chỉ gửi nhóm thành viên đang hoạt động.",
         "brand": "Hùng Vương Plaza",
         "title": "Mời thành viên về một trải nghiệm mới",
         "description": "Kết nối chương trình tại điểm đến với nhóm khách đã có quan hệ với thương hiệu.",
@@ -355,6 +370,7 @@ export const categories = [
     "items": [
       {
         "id": "taidat-return",
+        "rule": "Đến chu kỳ chăm sóc nón, tính từ lần ghé gần nhất.",
         "brand": "Tài Đạt",
         "title": "Nhắc chăm sóc nón, mở cơ hội ghé lại",
         "description": "Từ vòng đời sử dụng sản phẩm đến một dịch vụ hữu ích cho khách cũ.",
@@ -376,6 +392,7 @@ export const categories = [
       },
       {
         "id": "onici-reorder",
+        "rule": "Khách lâu chưa mua lại. Gợi ý món bổ sung theo lần mua trước.",
         "brand": "ONICI",
         "title": "Gợi ý bổ sung cho gian bếp quen",
         "description": "Tiếp tục câu chuyện từ nhu cầu đã có và những món khách từng quan tâm.",
@@ -397,6 +414,7 @@ export const categories = [
       },
       {
         "id": "osen-return",
+        "rule": "Khách đã từng lưu trú, lâu chưa đặt lại. Gửi khi gần dịp lễ hoặc mùa du lịch.",
         "brand": "Osen Hotel",
         "title": "Mời trở lại bằng một trải nghiệm khác",
         "description": "Giữ mối quan hệ sau chuyến đi và đưa ra một lý do phù hợp để khách nhớ tới thương hiệu.",

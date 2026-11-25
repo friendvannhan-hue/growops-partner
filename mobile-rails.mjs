@@ -51,6 +51,9 @@ export function setupMobileRail(host, {key, label}, view = globalThis) {
   nav.setAttribute('aria-label', `Duyệt ${label}`);
   const previous = element('button', 'mobile-rail-prev', '←');
   const next = element('button', 'mobile-rail-next', '→');
+  // Icon Iconoir (cùng nét với cả trang) thay ký tự ← →
+  previous.innerHTML = '<svg class="ga-i" viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M15 6L9 12L15 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  next.innerHTML = '<svg class="ga-i" viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   for (const [button, direction] of [[previous, 'trước'], [next, 'tiếp theo']]) {
     button.type = 'button';
     button.setAttribute('aria-controls', host.id);
@@ -149,5 +152,6 @@ export function setupMobileRail(host, {key, label}, view = globalThis) {
 if (typeof document !== 'undefined') {
   for (const config of [
     {selector: '#oa-brand-grid', key: 'oa', label: 'thương hiệu Zalo OA'},
+    {selector: '#website-projects .website-grid', key: 'website', label: 'dự án website'},
   ]) setupMobileRail(document.querySelector(config.selector), config);
 }

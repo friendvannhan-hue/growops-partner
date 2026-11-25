@@ -1,0 +1,62 @@
+@font-face { font-family: Switzer; src: url("./assets/fonts/switzer-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+/* tokens.css — bộ nhận diện GrowOps (đợt thiết kế lại theo nhịp link.me, 25/11/2026).
+   Mọi màu, cỡ chữ, khoảng cách, bo góc mới chỉ khai báo ở đây. Đổi 1 chỗ là cả web đổi theo. */
+:root {
+  /* Màu: đen/xám + một màu nhấn hồng lấy từ logo (làm đậm để chữ đạt tương phản ≥ 4,5:1 cả trên nền hồng nhạt) */
+  --c-ink: #0a0a0a;          /* chữ chính, nút chính — 19,8:1 */
+  --c-ink-2: #27272a;        /* chữ trên nền xám */
+  --c-muted: #63636b;        /* chữ phụ, vế sau tiêu đề — 5,95:1 trên trắng, 5,42:1 trên xám */
+  --c-bg: #ffffff;
+  --c-bg-soft: #fafafa;      /* nền section xen kẽ */
+  --c-bg-sunk: #f4f4f6;      /* nền ô, tab, khối hệ sinh thái */
+  --c-fog-2: #ececf0;
+  --c-ink-3: #82828a;      /* vế xám của tiêu đề lớn — 3,8:1 trên trắng, 3,5:1 trên xám */
+  --c-line: #e4e4e7;         /* viền thẻ, đường kẻ */
+  --c-line-strong: #d4d4d8;
+  --c-accent: #b8294a;       /* màu nhấn duy nhất (hồng logo, đậm hơn) — 6,08:1 trên trắng, 5,29:1 trên hồng nhạt */
+  --c-accent-ink: #8f1f3b;   /* chữ nhấn trên nền hồng nhạt */
+  --c-accent-soft: #fcebef;  /* nền nhãn nhỏ */
+  --c-on-dark: #fafafa;
+  --c-hero: #0b0b0d;         /* nền khối màn đầu (kiểu thẻ media tối của link.me) */
+  --c-accent-on-dark: #f5a3b9; /* hồng logo bản sáng, dùng trên nền tối — >10:1 */
+  --c-on-dark-muted: #a1a1aa;
+
+  /* Chữ: Inter đã có sẵn trong assets/fonts */
+  --f-display: Switzer, Inter, ui-sans-serif, system-ui, sans-serif; /* tiêu đề: Switzer (Fontshare, đã kiểm dấu tiếng Việt) */
+  --f-sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --fs-hero: clamp(2.25rem, 1.2rem + 4.6vw, 3.75rem);   /* 36px → 60px */
+  --fs-h2: clamp(2rem, 1.2rem + 3.2vw, 3.5rem);         /* 32px → 56px, cỡ tiêu đề phần của link.me */
+  --fs-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);      /* 20px → 24px */
+  --fs-h3-sub: clamp(1.625rem, 1.2rem + 1.2vw, 2rem);   /* 26px → 32px, tiêu đề khối con trong 1 phần */
+  --fs-lead: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);   /* 17px → 20px */
+  --fs-body: 1rem;                                       /* 16px */
+  --fs-small: 0.875rem;                                  /* 14px */
+  --fs-label: 0.8125rem;                                 /* 13px */
+  --lh-tight: 1.06;
+  --lh-body: 1.55;
+  --ls-display: -0.035em;
+  --ls-h2: -0.03em;
+
+  /* Khoảng cách theo bậc 4px */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px;
+  --section-y: clamp(64px, 40px + 5vw, 96px);
+  --gutter: clamp(16px, 4vw, 32px);
+  --shell-max: 1200px;
+
+  /* Bo góc */
+  --r-sm: 12px; --r-md: 16px; --r-lg: 24px; --r-pill: 999px;
+
+  /* Nút */
+  --btn-h: 48px;
+  --tap: 44px;
+
+  /* Chuyển động: tinh tế, ≤ 250ms */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --t-fast: 150ms;
+  --t-base: 220ms;
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --t-rise: 700ms;            /* chữ/khối hiện dần khi cuộn tới (kiểu link.me) */
+
+  /* Thanh nút dính đáy trên mobile */
+  --dock-h: 64px;
+}
